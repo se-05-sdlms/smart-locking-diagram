@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.7.10" name="3.7.10 Activate Resident Subscription from PayOS Webhook">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2376" pageHeight="1576">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="140.0" y="24" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="Resident" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="32.0" y="72" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="U" topParticipantY="112" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.0" y="112" as="sourcePoint" />
+            <mxPoint x="160.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c5" value="«boundary»&lt;br&gt;PayOS Checkout" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="top">
+          <mxGeometry x="372.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="UI" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="100" as="sourcePoint" />
+            <mxPoint x="500.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c7" value="«external»&lt;br&gt;PayOS Payment Gateway" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="PAY" participantRole="external" position="top">
+          <mxGeometry x="712.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="PAY" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0" y="100" as="sourcePoint" />
+            <mxPoint x="840.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c9" value="«controller»&lt;br&gt;PaymentWebhooksController" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="C" participantRole="controller" position="top">
+          <mxGeometry x="1052.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="C" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180.0" y="100" as="sourcePoint" />
+            <mxPoint x="1180.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c11" value="«service»&lt;br&gt;PayOSPaymentGatewayService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="G" participantRole="service" position="top">
+          <mxGeometry x="1392.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="G" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520.0" y="100" as="sourcePoint" />
+            <mxPoint x="1520.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="«service»&lt;br&gt;ResidentSubscriptionService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="top">
+          <mxGeometry x="1732.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="S" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1860.0" y="100" as="sourcePoint" />
+            <mxPoint x="1860.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="top">
+          <mxGeometry x="2072.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="DB" topParticipantY="100" bottomParticipantY="1460">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2200.0" y="100" as="sourcePoint" />
+            <mxPoint x="2200.0" y="1460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="496.0" y="184" width="8" height="1160" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1176.0" y="344" width="8" height="856" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1516.0" y="416" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1184.0" y="584" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1856.0" y="668" width="8" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="756" width="8" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1864.0" y="956" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="1056" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1." sourceParticipant="U" targetParticipant="UI" messageText="1.  Complete subscription payment" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.0" y="184" as="sourcePoint" />
+            <mxPoint x="496.0" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" value="1.  Complete subscription payment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.">
+          <mxGeometry x="180.0" y="148" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.1" sourceParticipant="UI" targetParticipant="PAY" messageText="1.1  Submit payment" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="504.0" y="256" as="sourcePoint" />
+            <mxPoint x="836.0" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="1.1  Submit payment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.1">
+          <mxGeometry x="520.0" y="220" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.2" sourceParticipant="PAY" targetParticipant="C" messageText="1.2  POST /api/webhooks/payos with signed&#10;payload" messageKind="http">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="844.0" y="344" as="sourcePoint" />
+            <mxPoint x="1176.0" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" value="1.2  POST /api/webhooks/payos with signed&lt;br&gt;payload" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.2">
+          <mxGeometry x="860.0" y="292" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.3" sourceParticipant="C" targetParticipant="G" messageText="1.3  VerifyWebhook(payload)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="416" as="sourcePoint" />
+            <mxPoint x="1516.0" y="416" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c32" value="1.3  VerifyWebhook(payload)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.3">
+          <mxGeometry x="1200.0" y="380" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.4" sourceParticipant="G" targetParticipant="C" messageText="1.4  Verified PayOSWebhookData" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="488" as="sourcePoint" />
+            <mxPoint x="1184.0" y="488" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c34" value="1.4  Verified PayOSWebhookData" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.4">
+          <mxGeometry x="1200.0" y="452" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.5" sourceParticipant="C" targetParticipant="C" messageText="1.5  Try overdue payment first; continue when not handled" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="560" as="sourcePoint" />
+            <mxPoint x="1192.0" y="600" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1244.0" y="560" />
+              <mxPoint x="1244.0" y="600" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c36" value="1.5  Try overdue payment first; continue when not handled" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.5">
+          <mxGeometry x="1260.0" y="524" width="1020.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.6" sourceParticipant="C" targetParticipant="S" messageText="1.6  ActivateSubscriptionAsync(payment)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="668" as="sourcePoint" />
+            <mxPoint x="1856.0" y="668" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c38" value="1.6  ActivateSubscriptionAsync(payment)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.6">
+          <mxGeometry x="1200.0" y="632" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.7" sourceParticipant="S" targetParticipant="DB" messageText="1.7  Lock resident subscriptions and load&#10;order by ExternalOrderCode" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="756" as="sourcePoint" />
+            <mxPoint x="2196.0" y="756" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c40" value="1.7  Lock resident subscriptions and load&lt;br&gt;order by ExternalOrderCode" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.7">
+          <mxGeometry x="1880.0" y="704" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.8" sourceParticipant="DB" targetParticipant="S" messageText="1.8  Pending subscription and latest active&#10;end date" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2204.0" y="844" as="sourcePoint" />
+            <mxPoint x="1864.0" y="844" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c42" value="1.8  Pending subscription and latest active&lt;br&gt;end date" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.8">
+          <mxGeometry x="1880.0" y="792" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.9" sourceParticipant="S" targetParticipant="S" messageText="1.9  Validate VND amount/reference; preserve&#10;purchased duration; append after active term" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="932" as="sourcePoint" />
+            <mxPoint x="1872.0" y="972" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1924.0" y="932" />
+              <mxPoint x="1924.0" y="972" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c44" value="1.9  Validate VND amount/reference; preserve&lt;br&gt;purchased duration; append after active term" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.9">
+          <mxGeometry x="1940.0" y="880" width="340.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.10" sourceParticipant="S" targetParticipant="DB" messageText="1.10  Set Active, PaidAt and transaction&#10;reference; commit" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="1056" as="sourcePoint" />
+            <mxPoint x="2196.0" y="1056" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c46" value="1.10  Set Active, PaidAt and transaction&lt;br&gt;reference; commit" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.10">
+          <mxGeometry x="1880.0" y="1004" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.11" sourceParticipant="S" targetParticipant="C" messageText="1.11  Activation completed" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="1128" as="sourcePoint" />
+            <mxPoint x="1184.0" y="1128" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c48" value="1.11  Activation completed" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.11">
+          <mxGeometry x="1200.0" y="1092" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.12" sourceParticipant="C" targetParticipant="PAY" messageText="1.12  200 OK" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="1200" as="sourcePoint" />
+            <mxPoint x="844.0" y="1200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c50" value="1.12  200 OK" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.12">
+          <mxGeometry x="860.0" y="1164" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.13" sourceParticipant="PAY" targetParticipant="UI" messageText="1.13  Display payment result" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="844.0" y="1272" as="sourcePoint" />
+            <mxPoint x="504.0" y="1272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c52" value="1.13  Display payment result" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.13">
+          <mxGeometry x="520.0" y="1236" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.14" sourceParticipant="UI" targetParticipant="U" messageText="1.14  Subscription activated" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="504.0" y="1344" as="sourcePoint" />
+            <mxPoint x="164.0" y="1344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c54" value="1.14  Subscription activated" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.14">
+          <mxGeometry x="180.0" y="1308" width="300.0" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

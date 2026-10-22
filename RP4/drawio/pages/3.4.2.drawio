@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.4.2" name="3.4.2 Dispatch Locker Unlock Command - Class Diagram">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2116" pageHeight="833">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ILockerAccessService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ OpenAsync(request: OpenLockerRequest):&lt;br&gt;  Task&amp;lt;OpenLockerResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ILockerAccessService">
+          <mxGeometry x="464" y="304" width="300" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerAccessService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;br&gt;- commandDispatcher: ILockerCommandDispatcher&lt;br&gt;- protocol: IBluetoothMessageCodec?&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ OpenAsync(request: OpenLockerRequest):&lt;br&gt;  Task&amp;lt;OpenLockerResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerAccessService">
+          <mxGeometry x="464" y="456" width="300" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ILockerCommandDispatcher&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ DispatchUnlockAsync(command:&lt;br&gt;  LockerUnlockCommand): Task&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ILockerCommandDispatcher">
+          <mxGeometry x="936" y="352" width="300" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;MqttLockerCommandDispatcher&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ DispatchUnlockAsync(command:&lt;br&gt;  LockerUnlockCommand): Task&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="MqttLockerCommandDispatcher">
+          <mxGeometry x="936" y="496" width="300" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IBluetoothMessageCodec&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ CreateCommand(device: string, subject: Guid,&lt;br&gt;  channel: int, kind: string, phone: string, pin:&lt;br&gt;  string, expires: DateTimeOffset, commandId:&lt;br&gt;  Guid): string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IBluetoothMessageCodec">
+          <mxGeometry x="936" y="176" width="300" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Lockers: DbSet&amp;lt;Locker&amp;gt;&lt;br&gt;+ LockerCompartments: DbSet&amp;lt;LockerCompartment&amp;gt;&lt;br&gt;+ LockerAccessEvents: DbSet&amp;lt;LockerAccessEvent&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+          <mxGeometry x="936" y="664" width="300" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Locker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerOperationalStatus&lt;br&gt;+ DeviceIdentifier: string&lt;br&gt;+ ConnectionStatus:&lt;br&gt;  LockerConnectionStatus&lt;br&gt;+ LastSeenAt: DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;br&gt;+ Address: string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Locker">
+          <mxGeometry x="1408" y="272" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerCompartment&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ DoorStatus: DoorStatus&lt;br&gt;+ HardwareChannel: int&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerCompartmentOperationalStatus&lt;br&gt;+ HardwareCode: string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerCompartment">
+          <mxGeometry x="1408" y="480" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerAccessEvent&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ LockerCompartmentId: Guid&lt;br&gt;+ Result: LockerAccessResult&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;br&gt;+ ParcelId: Guid?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerAccessEvent">
+          <mxGeometry x="1848" y="480" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«request»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OpenLockerRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ LockerId: Guid&lt;br&gt;+ LockerCompartmentId: Guid&lt;br&gt;+ UserId: Guid?&lt;br&gt;+ DeliveryRequestId: Guid?&lt;br&gt;+ ParcelId: Guid?&lt;br&gt;+ ReturnRequestId: Guid?&lt;br&gt;+ AccessType: LockerAccessType&lt;br&gt;+ AccessMethod: LockerAccessMethod&lt;br&gt;+ IpAddress: string?&lt;br&gt;+ DeviceContext: string?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OpenLockerRequest">
+          <mxGeometry x="48" y="72" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OpenLockerResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ AccessEventId: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ LockerCompartmentId: Guid&lt;br&gt;+ DeviceIdentifier: string&lt;br&gt;+ HardwareChannel: int&lt;br&gt;+ Result: LockerAccessResult&lt;br&gt;+ FailureReason: string?&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;br&gt;+ Bluetooth:&lt;br&gt;  BluetoothCommandResponse?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OpenLockerResponse">
+          <mxGeometry x="48" y="528" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«DTO»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerUnlockCommand&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ CommandId: Guid&lt;br&gt;+ DeviceIdentifier: string&lt;br&gt;+ HardwareChannel: int&lt;br&gt;+ DeliveryId: Guid?&lt;br&gt;+ OperatorOverride: bool&lt;br&gt;+ WorkflowCommand: string?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerUnlockCommand">
+          <mxGeometry x="1408" y="72" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;BluetoothCommandResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ DeviceIdentifier: string&lt;br&gt;+ Channel: int&lt;br&gt;+ Command: string&lt;br&gt;+ ExpiresAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="BluetoothCommandResponse">
+          <mxGeometry x="48" y="352" width="220" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.7591240875912408;exitPerimeter=0;entryX=0.0;entryY=0.5255474452554745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="LockerAccessService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c3" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="764" y="560" as="sourcePoint" />
+            <mxPoint x="936" y="736" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="880" y="560" />
+              <mxPoint x="880" y="736" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c15">
+          <mxGeometry x="888" y="639.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5255474452554745;exitPerimeter=0;entryX=0.0;entryY=0.4878048780487805;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="LockerAccessService" toClass="ILockerCommandDispatcher" relationshipCaption="«uses»" source="c3" target="c4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="764" y="528" as="sourcePoint" />
+            <mxPoint x="936" y="392" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="848" y="528" />
+              <mxPoint x="848" y="392" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c17">
+          <mxGeometry x="856" y="451.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.23357664233576642;exitPerimeter=0;entryX=0.0;entryY=0.5185185185185185;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="LockerAccessService" toClass="IBluetoothMessageCodec" relationshipCaption="«uses»" source="c3" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="764" y="488" as="sourcePoint" />
+            <mxPoint x="936" y="232" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="816" y="488" />
+              <mxPoint x="816" y="232" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c20" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c19">
+          <mxGeometry x="824" y="351.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="LockerAccessService" toClass="ILockerAccessService" relationshipCaption="«implements»" source="c3" target="c2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="616" y="456" as="sourcePoint" />
+            <mxPoint x="616" y="386" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c22" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c21">
+          <mxGeometry x="624" y="412.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="MqttLockerCommandDispatcher" toClass="ILockerCommandDispatcher" relationshipCaption="«implements»" source="c5" target="c4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1088" y="496" as="sourcePoint" />
+            <mxPoint x="1088" y="434" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c23">
+          <mxGeometry x="1096" y="456.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.23357664233576642;exitPerimeter=0;entryX=0.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="Locker" relationshipCaption="«persists»" source="c7" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="696" as="sourcePoint" />
+            <mxPoint x="1408" y="368" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1320" y="696" />
+              <mxPoint x="1320" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c25">
+          <mxGeometry x="1328" y="523.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.7591240875912408;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="LockerCompartment" relationshipCaption="«persists»" source="c7" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="768" as="sourcePoint" />
+            <mxPoint x="1408" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1352" y="768" />
+              <mxPoint x="1352" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c27">
+          <mxGeometry x="1360" y="655.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5255474452554745;exitPerimeter=0;entryX=0.0;entryY=0.7761194029850746;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="LockerAccessEvent" relationshipCaption="«persists»" source="c7" target="c10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="736" as="sourcePoint" />
+            <mxPoint x="1848" y="584" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1264" y="736" />
+              <mxPoint x="1264" y="776" />
+              <mxPoint x="1824" y="776" />
+              <mxPoint x="1824" y="584" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c29">
+          <mxGeometry x="1512.0" y="754" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.2926829268292683;exitPerimeter=0;entryX=1.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ILockerAccessService" toClass="OpenLockerRequest" relationshipCaption="«accepts»" source="c2" target="c11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="464" y="328" as="sourcePoint" />
+            <mxPoint x="268" y="168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="344" y="328" />
+              <mxPoint x="344" y="168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c32" value="«accepts»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c31">
+          <mxGeometry x="352" y="239.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.6829268292682927;exitPerimeter=0;entryX=1.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ILockerAccessService" toClass="OpenLockerResponse" relationshipCaption="«returns»" source="c2" target="c12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="464" y="360" as="sourcePoint" />
+            <mxPoint x="268" y="624" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="392" y="360" />
+              <mxPoint x="392" y="624" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c34" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c33">
+          <mxGeometry x="400" y="483.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.4878048780487805;exitPerimeter=0;entryX=0.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ILockerCommandDispatcher" toClass="LockerUnlockCommand" relationshipCaption="«uses»" source="c4" target="c13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="392" as="sourcePoint" />
+            <mxPoint x="1408" y="136" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1288" y="392" />
+              <mxPoint x="1288" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c36" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c35">
+          <mxGeometry x="1296" y="255.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=0.0;exitPerimeter=0;entryX=0.509090909090909;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OpenLockerResponse" toClass="BluetoothCommandResponse" relationshipCaption="«returns»" source="c12" target="c14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="528" as="sourcePoint" />
+            <mxPoint x="160" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c38" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c37">
+          <mxGeometry x="168" y="485.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=1.0;exitPerimeter=0;entryX=0.509090909090909;entryY=0.0;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="Locker" toClass="LockerCompartment" relationshipCaption="contains" source="c8" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520" y="458" as="sourcePoint" />
+            <mxPoint x="1520" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c40" value="contains" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c39">
+          <mxGeometry x="1528" y="460.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c39">
+          <mxGeometry x="1648" y="486" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c39">
+          <mxGeometry x="1648" y="434" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.23880597014925373;exitPerimeter=0;entryX=1.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="LockerAccessEvent" toClass="Locker" relationshipCaption="Locker" source="c10" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1848" y="512" as="sourcePoint" />
+            <mxPoint x="1628" y="368" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1712" y="512" />
+              <mxPoint x="1712" y="368" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c44" value="Locker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c43">
+          <mxGeometry x="1720" y="431.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerAccessEvent" edgeId="c43">
+          <mxGeometry x="1804" y="488" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c43">
+          <mxGeometry x="1636" y="344" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.47761194029850745;exitPerimeter=0;entryX=1.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="LockerAccessEvent" toClass="LockerCompartment" relationshipCaption="LockerCompartment" source="c10" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1848" y="544" as="sourcePoint" />
+            <mxPoint x="1628" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1768" y="544" />
+              <mxPoint x="1768" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c48" value="LockerCompartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c47">
+          <mxGeometry x="1647.8" y="538" width="100.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerAccessEvent" edgeId="c47">
+          <mxGeometry x="1804" y="520" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c47">
+          <mxGeometry x="1636" y="566" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ILockerAccessService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerAccessService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerAccessService">
+          <mxGeometry x="0" y="95" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ILockerCommandDispatcher">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="MqttLockerCommandDispatcher">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IBluetoothMessageCodec">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="95" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="Locker">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c60" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerCompartment">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c61" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerAccessEvent">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c62" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OpenLockerRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c63" value="" vertex="1" parent="c12" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OpenLockerResponse">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c64" value="" vertex="1" parent="c13" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerUnlockCommand">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c65" value="" vertex="1" parent="c14" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="BluetoothCommandResponse">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.5.18" name="3.5.18 Apply Compartment Reset Confirmation from MQTT">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1412">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;fillOpacity=100;strokeColor=#000000;rounded=0;connectable=0;" umlRole="combinedFragment">
+          <mxGeometry x="96" y="664" width="1848" height="312" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="alt" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;align=center;connectable=0;" umlRole="fragmentOperator">
+          <mxGeometry x="96" y="664" width="64" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="[Valid OK confirmation and not previously applied]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="672" width="1720" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="140.0" y="24" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="Locker Operator" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="32.0" y="72" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="U" topParticipantY="112" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.0" y="112" as="sourcePoint" />
+            <mxPoint x="160.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c8" value="«boundary»&lt;br&gt;Operator Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="top">
+          <mxGeometry x="376.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="UI" topParticipantY="100" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="504.0" y="100" as="sourcePoint" />
+            <mxPoint x="504.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="«device»&lt;br&gt;Locker IoT System" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DEV" participantRole="device" position="top">
+          <mxGeometry x="720.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="DEV" topParticipantY="100" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="848.0" y="100" as="sourcePoint" />
+            <mxPoint x="848.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="«service»&lt;br&gt;MqttLockerListenerService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="L" participantRole="service" position="top">
+          <mxGeometry x="1064.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="L" topParticipantY="100" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1192.0" y="100" as="sourcePoint" />
+            <mxPoint x="1192.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" value="«service»&lt;br&gt;CompartmentResetService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="top">
+          <mxGeometry x="1408.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="S" topParticipantY="100" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1536.0" y="100" as="sourcePoint" />
+            <mxPoint x="1536.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="«database»&lt;br&gt;CompartmentResetStore" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="STORE" participantRole="database" position="top">
+          <mxGeometry x="1752.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="STORE" topParticipantY="100" bottomParticipantY="1296">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1880.0" y="100" as="sourcePoint" />
+            <mxPoint x="1880.0" y="1296" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="500.0" y="184" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1188.0" y="272" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1532.0" y="344" width="8" height="836" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1540.0" y="456" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1876.0" y="556" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1876.0" y="788" width="8" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1." sourceParticipant="U" targetParticipant="UI" messageText="1.  Review compartment reset result" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.0" y="184" as="sourcePoint" />
+            <mxPoint x="500.0" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" value="1.  Review compartment reset result" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.">
+          <mxGeometry x="180.0" y="148" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=open;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.1" sourceParticipant="DEV" targetParticipant="L" messageText="1.1  Publish z2 reset result through&#10;configured MQTT broker" messageKind="async">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="852.0" y="272" as="sourcePoint" />
+            <mxPoint x="1188.0" y="272" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" value="1.1  Publish z2 reset result through&lt;br&gt;configured MQTT broker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.1">
+          <mxGeometry x="868.0" y="220" width="304.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.2" sourceParticipant="L" targetParticipant="S" messageText="1.2  ReceiveAsync(device, proof)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1196.0" y="344" as="sourcePoint" />
+            <mxPoint x="1532.0" y="344" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="1.2  ReceiveAsync(device, proof)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.2">
+          <mxGeometry x="1212.0" y="308" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.3" sourceParticipant="S" targetParticipant="S" messageText="1.3  Parse proof; match device, channel, subject&#10;and commandId" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="432" as="sourcePoint" />
+            <mxPoint x="1548.0" y="472" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1600.0" y="432" />
+              <mxPoint x="1600.0" y="472" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="1.3  Parse proof; match device, channel, subject&lt;br&gt;and commandId" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.3">
+          <mxGeometry x="1616.0" y="380" width="344.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.4" sourceParticipant="S" targetParticipant="STORE" messageText="1.4  Begin transaction; load pending reset and&#10;current compartment" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="556" as="sourcePoint" />
+            <mxPoint x="1876.0" y="556" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="1.4  Begin transaction; load pending reset and&lt;br&gt;current compartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.4">
+          <mxGeometry x="1556.0" y="504" width="304.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.5" sourceParticipant="STORE" targetParticipant="S" messageText="1.5  Pending request state" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1884.0" y="628" as="sourcePoint" />
+            <mxPoint x="1540.0" y="628" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="1.5  Pending request state" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.5">
+          <mxGeometry x="1556.0" y="592" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.6" sourceParticipant="S" targetParticipant="STORE" messageText="1.6  Release matching state; restore&#10;compartment; add LockerEvent and audit" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="788" as="sourcePoint" />
+            <mxPoint x="1876.0" y="788" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="1.6  Release matching state; restore&lt;br&gt;compartment; add LockerEvent and audit" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.6">
+          <mxGeometry x="1556.0" y="736" width="304.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="96" y="824" as="sourcePoint" />
+            <mxPoint x="1944" y="824" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" value="[Duplicate, failed or mismatched confirmation]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="832" width="1720" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.7" sourceParticipant="S" targetParticipant="STORE" messageText="1.7  Keep idempotent result or persist failure&#10;without releasing goods" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="940" as="sourcePoint" />
+            <mxPoint x="1876.0" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="1.7  Keep idempotent result or persist failure&lt;br&gt;without releasing goods" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.7">
+          <mxGeometry x="1556.0" y="888" width="304.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.8" sourceParticipant="S" targetParticipant="STORE" messageText="1.8  SaveChangesAsync and commit" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="1036" as="sourcePoint" />
+            <mxPoint x="1876.0" y="1036" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c43" value="1.8  SaveChangesAsync and commit" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.8">
+          <mxGeometry x="1556.0" y="1000" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.9" sourceParticipant="STORE" targetParticipant="S" messageText="1.9  Committed" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1884.0" y="1108" as="sourcePoint" />
+            <mxPoint x="1540.0" y="1108" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c45" value="1.9  Committed" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.9">
+          <mxGeometry x="1556.0" y="1072" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.10" sourceParticipant="S" targetParticipant="L" messageText="1.10  Task completed" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1540.0" y="1180" as="sourcePoint" />
+            <mxPoint x="1196.0" y="1180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c47" value="1.10  Task completed" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.10">
+          <mxGeometry x="1212.0" y="1144" width="304.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="140.0" y="1296" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="Locker Operator" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="32.0" y="1344" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="«boundary»&lt;br&gt;Operator Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="bottom">
+          <mxGeometry x="376.0" y="1296" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="«device»&lt;br&gt;Locker IoT System" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DEV" participantRole="device" position="bottom">
+          <mxGeometry x="720.0" y="1296" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="«service»&lt;br&gt;MqttLockerListenerService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="L" participantRole="service" position="bottom">
+          <mxGeometry x="1064.0" y="1296" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="«service»&lt;br&gt;CompartmentResetService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="bottom">
+          <mxGeometry x="1408.0" y="1296" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="«database»&lt;br&gt;CompartmentResetStore" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="STORE" participantRole="database" position="bottom">
+          <mxGeometry x="1752.0" y="1296" width="256" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

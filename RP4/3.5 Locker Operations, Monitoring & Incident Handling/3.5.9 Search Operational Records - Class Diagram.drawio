@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.5.9" name="3.5.9 Search Operational Records - Class Diagram">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2102" pageHeight="1275">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«controller»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OperationalRecordsController&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- service: IOperationalRecordService&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Get(query: string?, lockerId: Guid?, kind:&lt;br&gt;  string?, from: DateTimeOffset?, to:&lt;br&gt;  DateTimeOffset?, pageNumber: int = 1, pageSize:&lt;br&gt;  int = 20): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ GetDetail(kind: string, id: Guid):&lt;br&gt;  Task&amp;lt;IActionResult&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OperationalRecordsController">
+          <mxGeometry x="416" y="576" width="300" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IOperationalRecordService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SearchAsync(userId: Guid, role: string, query:&lt;br&gt;  string?, lockerId: Guid?, kind: string?, from:&lt;br&gt;  DateTimeOffset?, to: DateTimeOffset?, pageNumber:&lt;br&gt;  int = 1, pageSize: int = 20):&lt;br&gt;  Task&amp;lt;PagedResult&amp;lt;OperationalRecordResponse&amp;gt;&amp;gt;&lt;br&gt;+ GetDetailAsync(userId: Guid, role: string, kind:&lt;br&gt;  string, id: Guid):&lt;br&gt;  Task&amp;lt;OperationalRecordDetailResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IOperationalRecordService">
+          <mxGeometry x="856" y="448" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OperationalRecordService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SearchAsync(userId: Guid, role: string, query:&lt;br&gt;  string?, lockerId: Guid?, kind: string?, from:&lt;br&gt;  DateTimeOffset?, to: DateTimeOffset?, pageNumber:&lt;br&gt;  int = 1, pageSize: int = 20):&lt;br&gt;  Task&amp;lt;PagedResult&amp;lt;OperationalRecordResponse&amp;gt;&amp;gt;&lt;br&gt;+ GetDetailAsync(userId: Guid, role: string, kind:&lt;br&gt;  string, id: Guid):&lt;br&gt;  Task&amp;lt;OperationalRecordDetailResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OperationalRecordService">
+          <mxGeometry x="856" y="672" width="300" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ReturnRequests: DbSet&amp;lt;ReturnRequest&amp;gt;&lt;br&gt;+ Parcels: DbSet&amp;lt;Parcel&amp;gt;&lt;br&gt;+ Incidents: DbSet&amp;lt;Incident&amp;gt;&lt;br&gt;+ EmergencyUnlocks: DbSet&amp;lt;EmergencyUnlock&amp;gt;&lt;br&gt;+ MaintenanceRequests: DbSet&amp;lt;MaintenanceRequest&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+          <mxGeometry x="1296" y="576" width="300" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Parcel&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ DeliveryRequestId: Guid&lt;br&gt;+ Status: ParcelStatus&lt;br&gt;+ StoredAt: DateTimeOffset&lt;br&gt;+ MaxStorageUntil: DateTimeOffset&lt;br&gt;+ RetrievedAt: DateTimeOffset?&lt;br&gt;+ RemovedAt: DateTimeOffset?&lt;br&gt;+ RemovedByUserId: Guid?&lt;br&gt;+ RemovalReason: string?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Parcel">
+          <mxGeometry x="1744" y="72" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ReturnRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:237px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ AllocatedCompartmentId: Guid?&lt;br&gt;+ Status: ReturnRequestStatus&lt;br&gt;+ CompartmentReleasedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ReservationExpiresAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;br&gt;+ ResidentProfileId: Guid&lt;br&gt;+ ReturnCode: string&lt;br&gt;+ ReturnReason: string?&lt;br&gt;+ ReturnImageUrl: string?&lt;br&gt;+ ShipperSessionTokenHash: string?&lt;br&gt;+ ResidentDepositedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ShipperPickedUpAt: DateTimeOffset?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ReturnRequest">
+          <mxGeometry x="1744" y="320" width="220" height="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Incident&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:133px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid?&lt;br&gt;+ ReporterUserId: Guid?&lt;br&gt;+ Status: IncidentStatus&lt;br&gt;+ Description: string&lt;br&gt;+ CreatedAt: DateTimeOffset&lt;br&gt;+ ResolutionSummary: string?&lt;br&gt;+ ResolvedAt: DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Incident">
+          <mxGeometry x="1744" y="664" width="220" height="173" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;MaintenanceRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ Status: MaintenanceStatus&lt;br&gt;+ Description: string&lt;br&gt;+ CreatedAt: DateTimeOffset&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="MaintenanceRequest">
+          <mxGeometry x="1744" y="904" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;EmergencyUnlock&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:107px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ LockerCompartmentId: Guid?&lt;br&gt;+ Reason: string&lt;br&gt;+ OperatorUserId: Guid&lt;br&gt;+ RequestedAt: DateTimeOffset&lt;br&gt;+ Result: EmergencyUnlockResult&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="EmergencyUnlock">
+          <mxGeometry x="1744" y="1096" width="220" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;PagedResult&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Items: IReadOnlyList&amp;lt;T&amp;gt;&lt;br&gt;+ TotalCount: int&lt;br&gt;+ PageNumber: int&lt;br&gt;+ PageSize: int&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="PagedResult">
+          <mxGeometry x="48" y="832" width="220" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OperationalRecordResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:107px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Kind: string&lt;br&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ Status: string&lt;br&gt;+ LockerCode: string&lt;br&gt;+ Summary: string&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OperationalRecordResponse">
+          <mxGeometry x="48" y="624" width="220" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;OperationalRecordDetailResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Kind: string&lt;br&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ Status: string&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ LockerCode: string&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;br&gt;+ Details:&lt;br&gt;  IReadOnlyDictionary&amp;lt;string,&lt;br&gt;  string?&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="OperationalRecordDetailResponse">
+          <mxGeometry x="48" y="376" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.4819277108433735;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OperationalRecordsController" toClass="IOperationalRecordService" relationshipCaption="«uses»" source="c2" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="716" y="656" as="sourcePoint" />
+            <mxPoint x="856" y="528" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="784" y="656" />
+              <mxPoint x="784" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c14">
+          <mxGeometry x="792" y="583.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.49079754601226994;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OperationalRecordService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c4" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1156" y="768" as="sourcePoint" />
+            <mxPoint x="1296" y="656" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1224" y="768" />
+              <mxPoint x="1224" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c16">
+          <mxGeometry x="1232" y="703.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="OperationalRecordService" toClass="IOperationalRecordService" relationshipCaption="«implements»" source="c4" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1008" y="672" as="sourcePoint" />
+            <mxPoint x="1008" y="608" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c18">
+          <mxGeometry x="1016" y="631.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.147239263803681;exitPerimeter=0;entryX=0.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="Parcel" relationshipCaption="«persists»" source="c5" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="600" as="sourcePoint" />
+            <mxPoint x="1744" y="168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1640" y="600" />
+              <mxPoint x="1640" y="168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c20">
+          <mxGeometry x="1648" y="375.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.34355828220858897;exitPerimeter=0;entryX=0.0;entryY=0.49097472924187724;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="ReturnRequest" relationshipCaption="«persists»" source="c5" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="632" as="sourcePoint" />
+            <mxPoint x="1744" y="456" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1656" y="632" />
+              <mxPoint x="1656" y="456" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c22">
+          <mxGeometry x="1664" y="535.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.49079754601226994;exitPerimeter=0;entryX=0.0;entryY=0.5086705202312138;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="Incident" relationshipCaption="«persists»" source="c5" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="656" as="sourcePoint" />
+            <mxPoint x="1744" y="752" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1672" y="656" />
+              <mxPoint x="1672" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c24">
+          <mxGeometry x="1680" y="666.2" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6871165644171779;exitPerimeter=0;entryX=0.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="MaintenanceRequest" relationshipCaption="«persists»" source="c5" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="688" as="sourcePoint" />
+            <mxPoint x="1744" y="968" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1688" y="688" />
+              <mxPoint x="1688" y="968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c26">
+          <mxGeometry x="1616.0" y="819.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.8343558282208589;exitPerimeter=0;entryX=0.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="EmergencyUnlock" relationshipCaption="«persists»" source="c5" target="c10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="712" as="sourcePoint" />
+            <mxPoint x="1744" y="1168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1704" y="712" />
+              <mxPoint x="1704" y="1168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c28">
+          <mxGeometry x="1616.0" y="931.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.7710843373493976;exitPerimeter=0;entryX=1.0;entryY=0.5185185185185185;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OperationalRecordsController" toClass="PagedResult" relationshipCaption="«returns»" source="c2" target="c11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="704" as="sourcePoint" />
+            <mxPoint x="268" y="888" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="368" y="704" />
+              <mxPoint x="368" y="888" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c30">
+          <mxGeometry x="376" y="787.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.4819277108433735;exitPerimeter=0;entryX=1.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OperationalRecordsController" toClass="OperationalRecordResponse" relationshipCaption="«returns»" source="c2" target="c12">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="656" as="sourcePoint" />
+            <mxPoint x="268" y="696" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="344" y="656" />
+              <mxPoint x="344" y="696" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c32">
+          <mxGeometry x="276.6" y="674" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.24096385542168675;exitPerimeter=0;entryX=1.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="OperationalRecordsController" toClass="OperationalRecordDetailResponse" relationshipCaption="«returns»" source="c2" target="c13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="616" as="sourcePoint" />
+            <mxPoint x="268" y="472" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="616" />
+              <mxPoint x="320" y="472" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c34">
+          <mxGeometry x="328" y="535.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5086705202312138;exitPerimeter=0;entryX=1.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="Incident" toClass="EmergencyUnlock" relationshipCaption="causes" source="c8" target="c10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1964" y="752" as="sourcePoint" />
+            <mxPoint x="1964" y="1168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1992" y="752" />
+              <mxPoint x="1992" y="1168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="causes" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c36">
+          <mxGeometry x="2000" y="951.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Incident" edgeId="c36">
+          <mxGeometry x="1972" y="728" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="EmergencyUnlock" edgeId="c36">
+          <mxGeometry x="1972" y="1174" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=0.0;exitPerimeter=0;entryX=0.509090909090909;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="MaintenanceRequest" toClass="Incident" relationshipCaption="Incident" source="c9" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1856" y="904" as="sourcePoint" />
+            <mxPoint x="1856" y="837" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="Incident" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c40">
+          <mxGeometry x="1864" y="861.5" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="MaintenanceRequest" edgeId="c40">
+          <mxGeometry x="1864" y="880" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Incident" edgeId="c40">
+          <mxGeometry x="1864" y="843" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordsController">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordsController">
+          <mxGeometry x="0" y="72" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IOperationalRecordService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordService">
+          <mxGeometry x="0" y="72" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="121" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="Parcel">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ReturnRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="Incident">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="MaintenanceRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="EmergencyUnlock">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="PagedResult">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="" vertex="1" parent="c12" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordResponse">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="" vertex="1" parent="c13" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="OperationalRecordDetailResponse">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

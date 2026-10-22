@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.8.11" name="3.8.11 Manage Notification Rules - Class Diagram">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="763">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«controller»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;NotificationRulesController&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- service: INotificationRuleService&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Get(systemPolicyId: Guid?, isEnabled: bool?):&lt;br&gt;  Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ GetById(id: Guid): Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Create(request: CreateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;IActionResult&amp;gt;&lt;br&gt;+ Update(id: Guid, request:&lt;br&gt;  UpdateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;IActionResult&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="NotificationRulesController">
+          <mxGeometry x="416" y="304" width="300" height="192" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;INotificationRuleService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:159px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ GetAsync(systemPolicyId: Guid?, isEnabled:&lt;br&gt;  bool?):&lt;br&gt;  Task&amp;lt;IReadOnlyCollection&amp;lt;NotificationRuleResponse&amp;gt;&amp;gt;&lt;br&gt;+ GetByIdAsync(id: Guid):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;br&gt;+ CreateAsync(adminUserId: Guid, request:&lt;br&gt;  CreateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;br&gt;+ UpdateAsync(adminUserId: Guid, id: Guid, request:&lt;br&gt;  UpdateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="INotificationRuleService">
+          <mxGeometry x="856" y="152" width="300" height="199" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;NotificationRuleService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;/div&gt;&lt;div style=&quot;height:159px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ GetAsync(systemPolicyId: Guid?, isEnabled:&lt;br&gt;  bool?):&lt;br&gt;  Task&amp;lt;IReadOnlyCollection&amp;lt;NotificationRuleResponse&amp;gt;&amp;gt;&lt;br&gt;+ GetByIdAsync(id: Guid):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;br&gt;+ CreateAsync(adminUserId: Guid, request:&lt;br&gt;  CreateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;br&gt;+ UpdateAsync(adminUserId: Guid, id: Guid, request:&lt;br&gt;  UpdateNotificationRuleRequest):&lt;br&gt;  Task&amp;lt;NotificationRuleResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="NotificationRuleService">
+          <mxGeometry x="856" y="416" width="300" height="231" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SystemPolicies: DbSet&amp;lt;SystemPolicy&amp;gt;&lt;br&gt;+ NotificationRules: DbSet&amp;lt;NotificationRule&amp;gt;&lt;br&gt;+ AuditLogs: DbSet&amp;lt;AuditLog&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+          <mxGeometry x="1296" y="336" width="300" height="137" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;NotificationRule&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ SystemPolicyId: Guid&lt;br&gt;+ EventType: string&lt;br&gt;+ Channel: NotificationChannel&lt;br&gt;+ LeadTimeMinutes: int?&lt;br&gt;+ IsEnabled: bool&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="NotificationRule">
+          <mxGeometry x="1744" y="72" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;SystemPolicy&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:211px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ GuestSessionTimeoutMinutes: int&lt;br&gt;+ IsActive: bool&lt;br&gt;+ EffectiveFrom: DateTimeOffset&lt;br&gt;+ EffectiveTo: DateTimeOffset?&lt;br&gt;+ PickupReminderStartDay: int&lt;br&gt;+ ClearanceNoticeBeforeHours: int&lt;br&gt;+ OtpMaxAttempts: int&lt;br&gt;+ OtpLockoutMinutes: int&lt;br&gt;+ OverdueStartAfterHours: int&lt;br&gt;+ OverdueFeePerHour: decimal&lt;br&gt;+ MaxStorageHours: int&lt;br&gt;+ Currency: string&lt;br&gt;+ Version: int&lt;br&gt;+ CreatedByUserId: Guid&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="SystemPolicy">
+          <mxGeometry x="1744" y="272" width="220" height="251" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;AuditLog&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:107px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ ActorUserId: Guid?&lt;br&gt;+ Action: string&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;br&gt;+ EntityId: Guid?&lt;br&gt;+ Details: string?&lt;br&gt;+ EntityType: string?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="AuditLog">
+          <mxGeometry x="1744" y="584" width="220" height="147" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«request»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;CreateNotificationRuleRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SystemPolicyId: Guid&lt;br&gt;+ EventType: string&lt;br&gt;+ Channel: NotificationChannel&lt;br&gt;+ LeadTimeMinutes: int?&lt;br&gt;+ IsEnabled: bool&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="CreateNotificationRuleRequest">
+          <mxGeometry x="48" y="168" width="220" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«request»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;UpdateNotificationRuleRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ LeadTimeMinutes: int?&lt;br&gt;+ IsEnabled: bool&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="UpdateNotificationRuleRequest">
+          <mxGeometry x="48" y="352" width="220" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;NotificationRuleResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ SystemPolicyId: Guid&lt;br&gt;+ EventType: string&lt;br&gt;+ Channel: NotificationChannel&lt;br&gt;+ LeadTimeMinutes: int?&lt;br&gt;+ IsEnabled: bool&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="NotificationRuleResponse">
+          <mxGeometry x="48" y="504" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.4824120603015075;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="NotificationRulesController" toClass="INotificationRuleService" relationshipCaption="«uses»" source="c2" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="716" y="400" as="sourcePoint" />
+            <mxPoint x="856" y="248" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="784" y="400" />
+              <mxPoint x="784" y="248" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c12">
+          <mxGeometry x="792" y="315.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.48484848484848486;exitPerimeter=0;entryX=0.0;entryY=0.5255474452554745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="NotificationRuleService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c4" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1156" y="528" as="sourcePoint" />
+            <mxPoint x="1296" y="408" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1224" y="528" />
+              <mxPoint x="1224" y="408" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c14">
+          <mxGeometry x="1232" y="459.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="NotificationRuleService" toClass="INotificationRuleService" relationshipCaption="«implements»" source="c4" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1008" y="416" as="sourcePoint" />
+            <mxPoint x="1008" y="351" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c16">
+          <mxGeometry x="1016" y="374.5" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.23357664233576642;exitPerimeter=0;entryX=0.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="NotificationRule" relationshipCaption="«persists»" source="c5" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="368" as="sourcePoint" />
+            <mxPoint x="1744" y="136" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1648" y="368" />
+              <mxPoint x="1648" y="136" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c18">
+          <mxGeometry x="1656" y="243.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5255474452554745;exitPerimeter=0;entryX=0.0;entryY=0.5099601593625498;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="SystemPolicy" relationshipCaption="«persists»" source="c5" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="408" as="sourcePoint" />
+            <mxPoint x="1744" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1672" y="408" />
+              <mxPoint x="1672" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c20">
+          <mxGeometry x="1602.0" y="386" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.7591240875912408;exitPerimeter=0;entryX=0.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="AuditLog" relationshipCaption="«persists»" source="c5" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1596" y="440" as="sourcePoint" />
+            <mxPoint x="1744" y="656" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1696" y="440" />
+              <mxPoint x="1696" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c22">
+          <mxGeometry x="1704" y="539.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.25;exitPerimeter=0;entryX=1.0;entryY=0.5289256198347108;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="NotificationRulesController" toClass="CreateNotificationRuleRequest" relationshipCaption="«accepts»" source="c2" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="352" as="sourcePoint" />
+            <mxPoint x="268" y="232" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="352" />
+              <mxPoint x="320" y="232" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" value="«accepts»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c24">
+          <mxGeometry x="328" y="283.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.5;exitPerimeter=0;entryX=1.0;entryY=0.4878048780487805;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="NotificationRulesController" toClass="UpdateNotificationRuleRequest" relationshipCaption="«accepts»" source="c2" target="c10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="400" as="sourcePoint" />
+            <mxPoint x="268" y="392" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="344" y="400" />
+              <mxPoint x="344" y="392" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" value="«accepts»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c26">
+          <mxGeometry x="276.6" y="370" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.75;exitPerimeter=0;entryX=1.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="NotificationRulesController" toClass="NotificationRuleResponse" relationshipCaption="«returns»" source="c2" target="c11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="416" y="448" as="sourcePoint" />
+            <mxPoint x="268" y="568" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="368" y="448" />
+              <mxPoint x="368" y="568" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c28">
+          <mxGeometry x="376" y="499.0" width="58.800000000000004" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRulesController">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRulesController">
+          <mxGeometry x="0" y="72" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="INotificationRuleService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRuleService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRuleService">
+          <mxGeometry x="0" y="72" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="95" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRule">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="SystemPolicy">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="AuditLog">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CreateNotificationRuleRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="UpdateNotificationRuleRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="NotificationRuleResponse">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

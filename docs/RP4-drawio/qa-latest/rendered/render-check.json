@@ -1,0 +1,138 @@
+[
+  {
+    "key": "3.4.4",
+    "width": 1800,
+    "height": 799,
+    "cells": 71,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.5.10",
+    "width": 1800,
+    "height": 779,
+    "cells": 58,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.5.17",
+    "width": 1737,
+    "height": 1305,
+    "cells": 47,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.5.18",
+    "width": 1800,
+    "height": 1251,
+    "cells": 55,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.7.2",
+    "width": 1800,
+    "height": 594,
+    "cells": 51,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.7.3",
+    "width": 1800,
+    "height": 848,
+    "cells": 57,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.7.5",
+    "width": 1800,
+    "height": 1317,
+    "cells": 57,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.7.6",
+    "width": 1801,
+    "height": 1367,
+    "cells": 71,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.1",
+    "width": 1800,
+    "height": 1064,
+    "cells": 51,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.2",
+    "width": 1800,
+    "height": 470,
+    "cells": 47,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.3",
+    "width": 1800,
+    "height": 772,
+    "cells": 55,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.8",
+    "width": 1800,
+    "height": 879,
+    "cells": 51,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.9",
+    "width": 1800,
+    "height": 791,
+    "cells": 63,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.10",
+    "width": 1737,
+    "height": 1417,
+    "cells": 50,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.11",
+    "width": 1737,
+    "height": 1433,
+    "cells": 50,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.16",
+    "width": 1737,
+    "height": 1221,
+    "cells": 47,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  },
+  {
+    "key": "3.8.17",
+    "width": 1737,
+    "height": 1273,
+    "cells": 47,
+    "invalid": 0,
+    "clippedClassBoxes": []
+  }
+]

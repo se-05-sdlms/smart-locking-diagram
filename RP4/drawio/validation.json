@@ -1,0 +1,18 @@
+{
+  "counts": {
+    "pages": 154,
+    "sequences": 96,
+    "classes": 57,
+    "blank": 1,
+    "messages": 1038,
+    "square_self_messages": 119,
+    "top_participants": 509,
+    "bottom_participants": 509,
+    "bottom_actors": 96,
+    "class_relationships": 592,
+    "backend_types": 298,
+    "http_endpoints": 76,
+    "target_methods": 108
+  },
+  "errors": []
+}

@@ -1,0 +1,1161 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
+  <diagram id="rp4-3.3.1" name="3.3.1 Reserve Available Compartment - Class Diagram">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1788" pageHeight="962">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ICompartmentAllocationService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ReserveAvailableAsync(lockerId: Guid,&lt;br&gt;  deliveryRequestId: Guid?, returnRequestId: Guid?,&lt;br&gt;  expiresAt: DateTimeOffset, verifyDoorOnDevice:&lt;br&gt;  bool = false): Task&amp;lt;CompartmentReservation?&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ICompartmentAllocationService">
+          <mxGeometry x="48" y="512" width="300" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;CompartmentAllocationService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ReserveAvailableAsync(lockerId: Guid,&lt;br&gt;  deliveryRequestId: Guid?, returnRequestId: Guid?,&lt;br&gt;  expiresAt: DateTimeOffset, verifyDoorOnDevice:&lt;br&gt;  bool = false): Task&amp;lt;CompartmentReservation?&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="CompartmentAllocationService">
+          <mxGeometry x="48" y="688" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Lockers: DbSet&amp;lt;Locker&amp;gt;&lt;br&gt;+ LockerCompartments: DbSet&amp;lt;LockerCompartment&amp;gt;&lt;br&gt;+ ReturnRequests: DbSet&amp;lt;ReturnRequest&amp;gt;&lt;br&gt;+ CompartmentReservations:&lt;br&gt;  DbSet&amp;lt;CompartmentReservation&amp;gt;&lt;br&gt;+ Parcels: DbSet&amp;lt;Parcel&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+          <mxGeometry x="496" y="584" width="300" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Locker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerOperationalStatus&lt;br&gt;+ DeviceIdentifier: string&lt;br&gt;+ ConnectionStatus:&lt;br&gt;  LockerConnectionStatus&lt;br&gt;+ LastSeenAt: DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;br&gt;+ Address: string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Locker">
+          <mxGeometry x="936" y="72" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerCompartment&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ DoorStatus: DoorStatus&lt;br&gt;+ HardwareChannel: int&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerCompartmentOperationalStatus&lt;br&gt;+ HardwareCode: string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerCompartment">
+          <mxGeometry x="936" y="320" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;CompartmentReservation&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerCompartmentId: Guid&lt;br&gt;+ DeliveryRequestId: Guid?&lt;br&gt;+ ExpiresAt: DateTimeOffset&lt;br&gt;+ ReleasedAt: DateTimeOffset?&lt;br&gt;+ ReturnRequestId: Guid?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="CompartmentReservation">
+          <mxGeometry x="936" y="544" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Parcel&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ DeliveryRequestId: Guid&lt;br&gt;+ Status: ParcelStatus&lt;br&gt;+ StoredAt: DateTimeOffset&lt;br&gt;+ MaxStorageUntil: DateTimeOffset&lt;br&gt;+ RetrievedAt: DateTimeOffset?&lt;br&gt;+ RemovedAt: DateTimeOffset?&lt;br&gt;+ RemovedByUserId: Guid?&lt;br&gt;+ RemovalReason: string?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Parcel">
+          <mxGeometry x="936" y="744" width="220" height="186" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ReturnRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:237px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ AllocatedCompartmentId: Guid?&lt;br&gt;+ Status: ReturnRequestStatus&lt;br&gt;+ CompartmentReleasedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ReservationExpiresAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;br&gt;+ ResidentProfileId: Guid&lt;br&gt;+ ReturnCode: string&lt;br&gt;+ ReturnReason: string?&lt;br&gt;+ ReturnImageUrl: string?&lt;br&gt;+ ShipperSessionTokenHash: string?&lt;br&gt;+ ResidentDepositedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ShipperPickedUpAt: DateTimeOffset?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ReturnRequest">
+          <mxGeometry x="1520" y="400" width="220" height="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5142857142857142;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="CompartmentAllocationService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c3" target="c4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="348" y="760" as="sourcePoint" />
+            <mxPoint x="496" y="672" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="424" y="760" />
+              <mxPoint x="424" y="672" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c11" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c10">
+          <mxGeometry x="432" y="707.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="CompartmentAllocationService" toClass="ICompartmentAllocationService" relationshipCaption="«implements»" source="c3" target="c2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="688" as="sourcePoint" />
+            <mxPoint x="200" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c12">
+          <mxGeometry x="208" y="645.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.18181818181818182;exitPerimeter=0;entryX=0.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="Locker" relationshipCaption="«persists»" source="c4" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="616" as="sourcePoint" />
+            <mxPoint x="936" y="168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="616" />
+              <mxPoint x="840" y="168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c14">
+          <mxGeometry x="768.0" y="383.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.3181818181818182;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="LockerCompartment" relationshipCaption="«persists»" source="c4" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="640" as="sourcePoint" />
+            <mxPoint x="936" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="856" y="640" />
+              <mxPoint x="856" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c16">
+          <mxGeometry x="864" y="511.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6818181818181818;exitPerimeter=0;entryX=0.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="CompartmentReservation" relationshipCaption="«persists»" source="c4" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="704" as="sourcePoint" />
+            <mxPoint x="936" y="608" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="872" y="704" />
+              <mxPoint x="872" y="608" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c18">
+          <mxGeometry x="800.0" y="647.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.8181818181818182;exitPerimeter=0;entryX=0.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="Parcel" relationshipCaption="«persists»" source="c4" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="728" as="sourcePoint" />
+            <mxPoint x="936" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="896" y="728" />
+              <mxPoint x="896" y="840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c20">
+          <mxGeometry x="824.0" y="775.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5;exitPerimeter=0;entryX=0.0;entryY=0.8086642599277978;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="ReturnRequest" relationshipCaption="«persists»" source="c4" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="672" as="sourcePoint" />
+            <mxPoint x="1520" y="624" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="864" y="672" />
+              <mxPoint x="864" y="712" />
+              <mxPoint x="1496" y="712" />
+              <mxPoint x="1496" y="624" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c22">
+          <mxGeometry x="1148.0" y="690" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=1.0;exitPerimeter=0;entryX=0.509090909090909;entryY=0.0;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="Locker" toClass="LockerCompartment" relationshipCaption="contains" source="c5" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1048" y="258" as="sourcePoint" />
+            <mxPoint x="1048" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" value="contains" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c24">
+          <mxGeometry x="1056" y="280.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c24">
+          <mxGeometry x="1004" y="264" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c24">
+          <mxGeometry x="1004" y="296" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=1.0;exitPerimeter=0;entryX=0.509090909090909;entryY=0.0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="LockerCompartment" toClass="CompartmentReservation" relationshipCaption="reserved by" source="c6" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1048" y="480" as="sourcePoint" />
+            <mxPoint x="1048" y="544" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="reserved by" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c28">
+          <mxGeometry x="1056" y="503.0" width="69.2" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c28">
+          <mxGeometry x="1004" y="486" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="CompartmentReservation" edgeId="c28">
+          <mxGeometry x="1004" y="520" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.6064981949458483;exitPerimeter=0;entryX=1.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="ReturnRequest" toClass="CompartmentReservation" relationshipCaption="owns reservations" source="c9" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520" y="568" as="sourcePoint" />
+            <mxPoint x="1156" y="608" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1416" y="568" />
+              <mxPoint x="1416" y="608" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="owns reservations" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c32">
+          <mxGeometry x="1235.8" y="586" width="100.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="ReturnRequest" edgeId="c32">
+          <mxGeometry x="1476" y="544" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="CompartmentReservation" edgeId="c32">
+          <mxGeometry x="1164" y="584" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.20216606498194944;exitPerimeter=0;entryX=1.0;entryY=0.5161290322580645;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="ReturnRequest" toClass="Locker" relationshipCaption="Locker" source="c9" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520" y="456" as="sourcePoint" />
+            <mxPoint x="1156" y="168" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1256" y="456" />
+              <mxPoint x="1256" y="168" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="Locker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c36">
+          <mxGeometry x="1264" y="303.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="ReturnRequest" edgeId="c36">
+          <mxGeometry x="1476" y="432" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c36">
+          <mxGeometry x="1164" y="144" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.4043321299638989;exitPerimeter=0;entryX=1.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="ReturnRequest" toClass="LockerCompartment" relationshipCaption="AllocatedCompartment" source="c9" target="c6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520" y="512" as="sourcePoint" />
+            <mxPoint x="1156" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1336" y="512" />
+              <mxPoint x="1336" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="AllocatedCompartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c40">
+          <mxGeometry x="1370.0" y="490" width="116.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="ReturnRequest" edgeId="c40">
+          <mxGeometry x="1476" y="518" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c40">
+          <mxGeometry x="1164" y="376" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ICompartmentAllocationService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentAllocationService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentAllocationService">
+          <mxGeometry x="0" y="72" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="134" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="Locker">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerCompartment">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentReservation">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="Parcel">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ReturnRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rp4-3.3.2" name="3.3.2 Expire and Release Compartment Reservation - Class Diagram">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="1005">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«worker»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;DeliveryRequestExpirationWorker&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;# ExecuteAsync(): Task&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="DeliveryRequestExpirationWorker">
+          <mxGeometry x="48" y="376" width="300" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IDeliveryRequestService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ExpireReservationsAsync(): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IDeliveryRequestService">
+          <mxGeometry x="496" y="160" width="300" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;DeliveryRequestService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;br&gt;- compartmentAllocationService:&lt;br&gt;  ICompartmentAllocationService&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ExpireReservationsAsync(): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="DeliveryRequestService">
+          <mxGeometry x="496" y="296" width="300" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IReturnRequestService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ExpireReservationsAsync(): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IReturnRequestService">
+          <mxGeometry x="496" y="528" width="300" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ReturnRequestService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;br&gt;- compartmentAllocationService:&lt;br&gt;  ICompartmentAllocationService&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ExpireReservationsAsync(): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ReturnRequestService">
+          <mxGeometry x="496" y="664" width="300" height="127" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ICompartmentAllocationService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ReleaseAsync(deliveryRequestId: Guid?,&lt;br&gt;  returnRequestId: Guid?, releasedAt:&lt;br&gt;  DateTimeOffset): Task&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ICompartmentAllocationService">
+          <mxGeometry x="936" y="264" width="300" height="95" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:68px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ DeliveryRequests: DbSet&amp;lt;DeliveryRequest&amp;gt;&lt;br&gt;+ ReturnRequests: DbSet&amp;lt;ReturnRequest&amp;gt;&lt;br&gt;+ CompartmentReservations:&lt;br&gt;  DbSet&amp;lt;CompartmentReservation&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+          <mxGeometry x="936" y="480" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;CompartmentReservation&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerCompartmentId: Guid&lt;br&gt;+ DeliveryRequestId: Guid?&lt;br&gt;+ ExpiresAt: DateTimeOffset&lt;br&gt;+ ReleasedAt: DateTimeOffset?&lt;br&gt;+ ReturnRequestId: Guid?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="CompartmentReservation">
+          <mxGeometry x="1376" y="456" width="220" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;DeliveryRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:237px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ Status: DeliveryRequestStatus&lt;br&gt;+ GuestSessionTokenHash: string&lt;br&gt;+ SessionExpiresAt: DateTimeOffset&lt;br&gt;+ SystemPolicyId: Guid&lt;br&gt;+ ResidentProfileId: Guid?&lt;br&gt;+ RecipientPhoneSnapshot: string?&lt;br&gt;+ ParcelImageUrl: string?&lt;br&gt;+ ApprovalModeSnapshot:&lt;br&gt;  DeliveryApprovalMode?&lt;br&gt;+ ApprovalExpiresAt: DateTimeOffset?&lt;br&gt;+ AllocatedCompartmentId: Guid?&lt;br&gt;+ ReservationExpiresAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ CompartmentReleasedAt:&lt;br&gt;  DateTimeOffset?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="DeliveryRequest">
+          <mxGeometry x="1376" y="104" width="220" height="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ReturnRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:237px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ AllocatedCompartmentId: Guid?&lt;br&gt;+ Status: ReturnRequestStatus&lt;br&gt;+ CompartmentReleasedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ReservationExpiresAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;br&gt;+ ResidentProfileId: Guid&lt;br&gt;+ ReturnCode: string&lt;br&gt;+ ReturnReason: string?&lt;br&gt;+ ReturnImageUrl: string?&lt;br&gt;+ ShipperSessionTokenHash: string?&lt;br&gt;+ ResidentDepositedAt:&lt;br&gt;  DateTimeOffset?&lt;br&gt;+ ShipperPickedUpAt: DateTimeOffset?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ReturnRequest">
+          <mxGeometry x="1376" y="696" width="220" height="277" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=0.0;entryY=0.5555555555555556;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="DeliveryRequestExpirationWorker" toClass="IDeliveryRequestService" relationshipCaption="«uses»" source="c2" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="348" y="400" as="sourcePoint" />
+            <mxPoint x="496" y="200" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="408" y="400" />
+              <mxPoint x="408" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c13" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c12">
+          <mxGeometry x="416" y="291.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6666666666666666;exitPerimeter=0;entryX=0.0;entryY=0.5555555555555556;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="DeliveryRequestExpirationWorker" toClass="IReturnRequestService" relationshipCaption="«uses»" source="c2" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="348" y="424" as="sourcePoint" />
+            <mxPoint x="496" y="568" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="440" y="424" />
+              <mxPoint x="440" y="568" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c15" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c14">
+          <mxGeometry x="448" y="487.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6929133858267716;exitPerimeter=0;entryX=0.0;entryY=0.32;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="DeliveryRequestService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c4" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="384" as="sourcePoint" />
+            <mxPoint x="936" y="528" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="856" y="384" />
+              <mxPoint x="856" y="528" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c17" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c16">
+          <mxGeometry x="794" y="447.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.31496062992125984;exitPerimeter=0;entryX=0.0;entryY=0.3368421052631579;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="DeliveryRequestService" toClass="ICompartmentAllocationService" relationshipCaption="«uses»" source="c4" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="336" as="sourcePoint" />
+            <mxPoint x="936" y="296" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="336" />
+              <mxPoint x="840" y="296" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c19" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c18">
+          <mxGeometry x="861.0" y="274" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="DeliveryRequestService" toClass="IDeliveryRequestService" relationshipCaption="«implements»" source="c4" target="c3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="648" y="296" as="sourcePoint" />
+            <mxPoint x="648" y="232" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c21" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c20">
+          <mxGeometry x="656" y="255.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6929133858267716;exitPerimeter=0;entryX=0.0;entryY=0.6933333333333334;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ReturnRequestService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c6" target="c8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="752" as="sourcePoint" />
+            <mxPoint x="936" y="584" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="896" y="752" />
+              <mxPoint x="896" y="584" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c23" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c22">
+          <mxGeometry x="904" y="659.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.31496062992125984;exitPerimeter=0;entryX=0.0;entryY=0.6736842105263158;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ReturnRequestService" toClass="ICompartmentAllocationService" relationshipCaption="«uses»" source="c6" target="c7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="796" y="704" as="sourcePoint" />
+            <mxPoint x="936" y="328" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="872" y="704" />
+              <mxPoint x="872" y="328" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c24">
+          <mxGeometry x="880" y="507.0" width="54" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="ReturnRequestService" toClass="IReturnRequestService" relationshipCaption="«implements»" source="c6" target="c5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="648" y="664" as="sourcePoint" />
+            <mxPoint x="648" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c27" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c26">
+          <mxGeometry x="656" y="623.0" width="74.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.48;exitPerimeter=0;entryX=0.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="CompartmentReservation" relationshipCaption="«persists»" source="c8" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="552" as="sourcePoint" />
+            <mxPoint x="1376" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1304" y="552" />
+              <mxPoint x="1304" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c28">
+          <mxGeometry x="1308.0" y="498" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.26666666666666666;exitPerimeter=0;entryX=0.0;entryY=0.49097472924187724;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="DeliveryRequest" relationshipCaption="«persists»" source="c8" target="c10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="520" as="sourcePoint" />
+            <mxPoint x="1376" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1280" y="520" />
+              <mxPoint x="1280" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c30">
+          <mxGeometry x="1288" y="371.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.7466666666666667;exitPerimeter=0;entryX=0.0;entryY=0.49097472924187724;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="ReturnRequest" relationshipCaption="«persists»" source="c8" target="c11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1236" y="592" as="sourcePoint" />
+            <mxPoint x="1376" y="832" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1328" y="592" />
+              <mxPoint x="1328" y="832" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c32">
+          <mxGeometry x="1256.0" y="703.0" width="64.0" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=1.0;exitPerimeter=0;entryX=0.509090909090909;entryY=0.0;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="DeliveryRequest" toClass="CompartmentReservation" relationshipCaption="owns reservations" source="c10" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1488" y="381" as="sourcePoint" />
+            <mxPoint x="1488" y="456" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="owns reservations" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c34">
+          <mxGeometry x="1496" y="409.5" width="100.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="DeliveryRequest" edgeId="c34">
+          <mxGeometry x="1496" y="387" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="CompartmentReservation" edgeId="c34">
+          <mxGeometry x="1496" y="432" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.509090909090909;exitY=0.0;exitPerimeter=0;entryX=0.509090909090909;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="ReturnRequest" toClass="CompartmentReservation" relationshipCaption="owns reservations" source="c11" target="c9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1488" y="696" as="sourcePoint" />
+            <mxPoint x="1488" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" value="owns reservations" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c38">
+          <mxGeometry x="1496" y="634.0" width="100.4" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="ReturnRequest" edgeId="c38">
+          <mxGeometry x="1496" y="672" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="CompartmentReservation" edgeId="c38">
+          <mxGeometry x="1496" y="596" width="36" height="18" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="DeliveryRequestExpirationWorker">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="" vertex="1" parent="c3" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IDeliveryRequestService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="DeliveryRequestService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="" vertex="1" parent="c4" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="DeliveryRequestService">
+          <mxGeometry x="0" y="95" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" vertex="1" parent="c5" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IReturnRequestService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ReturnRequestService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" vertex="1" parent="c6" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ReturnRequestService">
+          <mxGeometry x="0" y="95" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ICompartmentAllocationService">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c51" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ApplicationDbContext">
+          <mxGeometry x="0" y="108" width="300" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentReservation">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="DeliveryRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ReturnRequest">
+          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rp4-3.3.3" name="3.3.3 Reserve Available Compartment">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1308">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;fillOpacity=100;strokeColor=#000000;rounded=0;connectable=0;" umlRole="combinedFragment">
+          <mxGeometry x="96" y="648" width="1528" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="alt" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;align=center;connectable=0;" umlRole="fragmentOperator">
+          <mxGeometry x="96" y="648" width="64" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="[No eligible compartment]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="656" width="1400" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="140.0" y="24" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="Shipper" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="32.0" y="72" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="U" topParticipantY="112" bottomParticipantY="1192">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.0" y="112" as="sourcePoint" />
+            <mxPoint x="160.0" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c8" value="«boundary»&lt;br&gt;Guest Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="top">
+          <mxGeometry x="382.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="UI" topParticipantY="100" bottomParticipantY="1192">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510.0" y="100" as="sourcePoint" />
+            <mxPoint x="510.0" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="«service»&lt;br&gt;DeliveryRequestService / ReturnRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="OWNER" participantRole="service" position="top">
+          <mxGeometry x="732.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="OWNER" topParticipantY="100" bottomParticipantY="1192">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="860.0" y="100" as="sourcePoint" />
+            <mxPoint x="860.0" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="top">
+          <mxGeometry x="1082.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="S" topParticipantY="100" bottomParticipantY="1192">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210.0" y="100" as="sourcePoint" />
+            <mxPoint x="1210.0" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="top">
+          <mxGeometry x="1432.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="DB" topParticipantY="100" bottomParticipantY="1192">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1560.0" y="100" as="sourcePoint" />
+            <mxPoint x="1560.0" y="1192" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="506.0" y="184" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1206.0" y="292" width="8" height="464" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1214.0" y="404" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1556.0" y="524" width="8" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1556.0" y="908" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1." sourceParticipant="U" targetParticipant="UI" messageText="1.  Request compartment allocation" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.0" y="184" as="sourcePoint" />
+            <mxPoint x="506.0" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c22" value="1.  Request compartment allocation" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.">
+          <mxGeometry x="180.0" y="148" width="310.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.1" sourceParticipant="OWNER" targetParticipant="S" messageText="1.1  ReserveAvailableAsync(lockerId,&#10;deliveryId, returnId, expiresAt,&#10;verifyDoorOnDevice)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="864.0" y="292" as="sourcePoint" />
+            <mxPoint x="1206.0" y="292" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c24" value="1.1  ReserveAvailableAsync(lockerId,&lt;br&gt;deliveryId, returnId, expiresAt,&lt;br&gt;verifyDoorOnDevice)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.1">
+          <mxGeometry x="880.0" y="220" width="310.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.2" sourceParticipant="S" targetParticipant="S" messageText="1.2  Require exactly one owner: deliveryId XOR&#10;returnId" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1214.0" y="380" as="sourcePoint" />
+            <mxPoint x="1222.0" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1274.0" y="380" />
+              <mxPoint x="1274.0" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c26" value="1.2  Require exactly one owner: deliveryId XOR&lt;br&gt;returnId" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.2">
+          <mxGeometry x="1290.0" y="328" width="350.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.3" sourceParticipant="S" targetParticipant="DB" messageText="1.3  Begin Serializable transaction when&#10;relational; select first eligible&#10;compartment" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1214.0" y="524" as="sourcePoint" />
+            <mxPoint x="1556.0" y="524" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c28" value="1.3  Begin Serializable transaction when&lt;br&gt;relational; select first eligible&lt;br&gt;compartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.3">
+          <mxGeometry x="1230.0" y="452" width="310.0" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.4" sourceParticipant="DB" targetParticipant="S" messageText="1.4  Operational candidate ordered by Code, or&#10;null" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1564.0" y="612" as="sourcePoint" />
+            <mxPoint x="1214.0" y="612" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c30" value="1.4  Operational candidate ordered by Code, or&lt;br&gt;null" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.4">
+          <mxGeometry x="1230.0" y="560" width="310.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.5" sourceParticipant="S" targetParticipant="OWNER" messageText="1.5  null" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1214.0" y="756" as="sourcePoint" />
+            <mxPoint x="864.0" y="756" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c32" value="1.5  null" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.5">
+          <mxGeometry x="880.0" y="720" width="310.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="96" y="792" as="sourcePoint" />
+            <mxPoint x="1624" y="792" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c34" value="[Candidate available]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="800" width="1400" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.6" sourceParticipant="S" targetParticipant="DB" messageText="1.6  Insert reservation; SaveChangesAsync and&#10;commit transaction" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1214.0" y="908" as="sourcePoint" />
+            <mxPoint x="1556.0" y="908" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c36" value="1.6  Insert reservation; SaveChangesAsync and&lt;br&gt;commit transaction" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.6">
+          <mxGeometry x="1230.0" y="856" width="310.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c37" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.7" sourceParticipant="DB" targetParticipant="S" messageText="1.7  Reservation persisted" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1564.0" y="980" as="sourcePoint" />
+            <mxPoint x="1214.0" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c38" value="1.7  Reservation persisted" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.7">
+          <mxGeometry x="1230.0" y="944" width="310.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c39" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.8" sourceParticipant="S" targetParticipant="OWNER" messageText="1.8  CompartmentReservation" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1214.0" y="1052" as="sourcePoint" />
+            <mxPoint x="864.0" y="1052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c40" value="1.8  CompartmentReservation" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.8">
+          <mxGeometry x="880.0" y="1016" width="310.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="140.0" y="1192" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="Shipper" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="32.0" y="1240" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c43" value="«boundary»&lt;br&gt;Guest Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="bottom">
+          <mxGeometry x="382.0" y="1192" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="«service»&lt;br&gt;DeliveryRequestService / ReturnRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="OWNER" participantRole="service" position="bottom">
+          <mxGeometry x="732.0" y="1192" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="bottom">
+          <mxGeometry x="1082.0" y="1192" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="bottom">
+          <mxGeometry x="1432.0" y="1192" width="256" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rp4-3.3.4" name="3.3.4 Expire Delivery Reservations">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2376" pageHeight="1356">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;fillOpacity=100;strokeColor=#000000;rounded=0;connectable=0;" umlRole="combinedFragment">
+          <mxGeometry x="96" y="508" width="2168" height="412" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="loop" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;align=center;connectable=0;" umlRole="fragmentOperator">
+          <mxGeometry x="96" y="508" width="64" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="[Each expired request]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="516" width="2040" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="140.0" y="24" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="Shipper" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="32.0" y="72" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="U" topParticipantY="112" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.0" y="112" as="sourcePoint" />
+            <mxPoint x="160.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c8" value="«boundary»&lt;br&gt;Guest Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="top">
+          <mxGeometry x="372.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="UI" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="100" as="sourcePoint" />
+            <mxPoint x="500.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="«external»&lt;br&gt;System Scheduler" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="SCH" participantRole="external" position="top">
+          <mxGeometry x="712.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="SCH" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0" y="100" as="sourcePoint" />
+            <mxPoint x="840.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="«worker»&lt;br&gt;DeliveryRequestExpirationWorker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="W" participantRole="worker" position="top">
+          <mxGeometry x="1052.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="W" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180.0" y="100" as="sourcePoint" />
+            <mxPoint x="1180.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" value="«service»&lt;br&gt;DeliveryRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="top">
+          <mxGeometry x="1392.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="S" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520.0" y="100" as="sourcePoint" />
+            <mxPoint x="1520.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="A" participantRole="service" position="top">
+          <mxGeometry x="1732.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="A" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1860.0" y="100" as="sourcePoint" />
+            <mxPoint x="1860.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="top">
+          <mxGeometry x="2072.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="DB" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2200.0" y="100" as="sourcePoint" />
+            <mxPoint x="2200.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c20" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="496.0" y="184" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1176.0" y="256" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1516.0" y="328" width="8" height="796" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="400" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1524.0" y="640" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1856.0" y="724" width="8" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="812" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="980" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1." sourceParticipant="U" targetParticipant="UI" messageText="1.  Track guest delivery request" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.0" y="184" as="sourcePoint" />
+            <mxPoint x="496.0" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="1.  Track guest delivery request" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.">
+          <mxGeometry x="180.0" y="148" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=open;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.1" sourceParticipant="SCH" targetParticipant="W" messageText="1.1  Scheduled delivery-expiration tick" messageKind="async">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="844.0" y="256" as="sourcePoint" />
+            <mxPoint x="1176.0" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="1.1  Scheduled delivery-expiration tick" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.1">
+          <mxGeometry x="860.0" y="220" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.2" sourceParticipant="W" targetParticipant="S" messageText="1.2  ExpireReservationsAsync()" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="328" as="sourcePoint" />
+            <mxPoint x="1516.0" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="1.2  ExpireReservationsAsync()" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.2">
+          <mxGeometry x="1200.0" y="292" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.3" sourceParticipant="S" targetParticipant="DB" messageText="1.3  Read Allocated requests whose ReservationExpiresAt &lt;= now" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="400" as="sourcePoint" />
+            <mxPoint x="2196.0" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="1.3  Read Allocated requests whose ReservationExpiresAt &amp;lt;= now" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.3">
+          <mxGeometry x="1540.0" y="364" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.4" sourceParticipant="DB" targetParticipant="S" messageText="1.4  Expired requests" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2204.0" y="472" as="sourcePoint" />
+            <mxPoint x="1524.0" y="472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="1.4  Expired requests" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.4">
+          <mxGeometry x="1540.0" y="436" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.5" sourceParticipant="S" targetParticipant="S" messageText="1.5  Set Expired and relevant expiry metadata" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="616" as="sourcePoint" />
+            <mxPoint x="1532.0" y="656" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1584.0" y="616" />
+              <mxPoint x="1584.0" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" value="1.5  Set Expired and relevant expiry metadata" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.5">
+          <mxGeometry x="1600.0" y="580" width="680.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.6" sourceParticipant="S" targetParticipant="A" messageText="1.6  ReleaseAsync(deliveryId, returnId, now)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="724" as="sourcePoint" />
+            <mxPoint x="1856.0" y="724" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="1.6  ReleaseAsync(deliveryId, returnId, now)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.6">
+          <mxGeometry x="1540.0" y="688" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.7" sourceParticipant="A" targetParticipant="DB" messageText="1.7  Set ReleasedAt on unreleased tracked&#10;reservations" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="812" as="sourcePoint" />
+            <mxPoint x="2196.0" y="812" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c43" value="1.7  Set ReleasedAt on unreleased tracked&lt;br&gt;reservations" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.7">
+          <mxGeometry x="1880.0" y="760" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.8" sourceParticipant="A" targetParticipant="S" messageText="1.8  Tracked changes" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="884" as="sourcePoint" />
+            <mxPoint x="1524.0" y="884" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c45" value="1.8  Tracked changes" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.8">
+          <mxGeometry x="1540.0" y="848" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.9" sourceParticipant="S" targetParticipant="DB" messageText="1.9  SaveChangesAsync; return count" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="980" as="sourcePoint" />
+            <mxPoint x="2196.0" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c47" value="1.9  SaveChangesAsync; return count" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.9">
+          <mxGeometry x="1540.0" y="944" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.10" sourceParticipant="DB" targetParticipant="S" messageText="1.10  Saved" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2204.0" y="1052" as="sourcePoint" />
+            <mxPoint x="1524.0" y="1052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c49" value="1.10  Saved" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.10">
+          <mxGeometry x="1540.0" y="1016" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.11" sourceParticipant="S" targetParticipant="W" messageText="1.11  Expired count" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="1124" as="sourcePoint" />
+            <mxPoint x="1184.0" y="1124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c51" value="1.11  Expired count" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.11">
+          <mxGeometry x="1200.0" y="1088" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="140.0" y="1240" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="Shipper" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="32.0" y="1288" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="«boundary»&lt;br&gt;Guest Web" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="bottom">
+          <mxGeometry x="372.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="«external»&lt;br&gt;System Scheduler" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="SCH" participantRole="external" position="bottom">
+          <mxGeometry x="712.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="«worker»&lt;br&gt;DeliveryRequestExpirationWorker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="W" participantRole="worker" position="bottom">
+          <mxGeometry x="1052.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="«service»&lt;br&gt;DeliveryRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="bottom">
+          <mxGeometry x="1392.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="A" participantRole="service" position="bottom">
+          <mxGeometry x="1732.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="bottom">
+          <mxGeometry x="2072.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rp4-3.3.5" name="3.3.5 Expire Return Reservations">
+    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2376" pageHeight="1356">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c2" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;fillOpacity=100;strokeColor=#000000;rounded=0;connectable=0;" umlRole="combinedFragment">
+          <mxGeometry x="96" y="508" width="2168" height="412" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" value="loop" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;align=center;connectable=0;" umlRole="fragmentOperator">
+          <mxGeometry x="96" y="508" width="64" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" value="[Each expired request]" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=13;spacing=0;">
+          <mxGeometry x="176" y="516" width="2040" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="140.0" y="24" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" value="Resident" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="top">
+          <mxGeometry x="32.0" y="72" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="U" topParticipantY="112" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160.0" y="112" as="sourcePoint" />
+            <mxPoint x="160.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c8" value="«boundary»&lt;br&gt;Resident Mobile App" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="top">
+          <mxGeometry x="372.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="UI" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="500.0" y="100" as="sourcePoint" />
+            <mxPoint x="500.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c10" value="«external»&lt;br&gt;System Scheduler" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="SCH" participantRole="external" position="top">
+          <mxGeometry x="712.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="SCH" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="840.0" y="100" as="sourcePoint" />
+            <mxPoint x="840.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c12" value="«worker»&lt;br&gt;DeliveryRequestExpirationWorker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="W" participantRole="worker" position="top">
+          <mxGeometry x="1052.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="W" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180.0" y="100" as="sourcePoint" />
+            <mxPoint x="1180.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c14" value="«service»&lt;br&gt;ReturnRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="top">
+          <mxGeometry x="1392.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="S" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1520.0" y="100" as="sourcePoint" />
+            <mxPoint x="1520.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c16" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="A" participantRole="service" position="top">
+          <mxGeometry x="1732.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="A" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1860.0" y="100" as="sourcePoint" />
+            <mxPoint x="1860.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c18" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="top">
+          <mxGeometry x="2072.0" y="28" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=none;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="lifeline" participant="DB" topParticipantY="100" bottomParticipantY="1240">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2200.0" y="100" as="sourcePoint" />
+            <mxPoint x="2200.0" y="1240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c20" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="496.0" y="184" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1176.0" y="256" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1516.0" y="328" width="8" height="796" as="geometry" />
+        </mxCell>
+        <mxCell id="c23" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="400" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="nestedActivation">
+          <mxGeometry x="1524.0" y="640" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c25" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="1856.0" y="724" width="8" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="812" width="8" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c27" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="activation">
+          <mxGeometry x="2196.0" y="980" width="8" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1." sourceParticipant="U" targetParticipant="UI" messageText="1.  Track return request" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="164.0" y="184" as="sourcePoint" />
+            <mxPoint x="496.0" y="184" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c29" value="1.  Track return request" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.">
+          <mxGeometry x="180.0" y="148" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c30" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=open;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.1" sourceParticipant="SCH" targetParticipant="W" messageText="1.1  Scheduled return-expiration tick" messageKind="async">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="844.0" y="256" as="sourcePoint" />
+            <mxPoint x="1176.0" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c31" value="1.1  Scheduled return-expiration tick" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.1">
+          <mxGeometry x="860.0" y="220" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c32" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.2" sourceParticipant="W" targetParticipant="S" messageText="1.2  ExpireReservationsAsync()" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1184.0" y="328" as="sourcePoint" />
+            <mxPoint x="1516.0" y="328" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c33" value="1.2  ExpireReservationsAsync()" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.2">
+          <mxGeometry x="1200.0" y="292" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c34" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.3" sourceParticipant="S" targetParticipant="DB" messageText="1.3  Read Allocated requests whose ReservationExpiresAt &lt;= now" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="400" as="sourcePoint" />
+            <mxPoint x="2196.0" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c35" value="1.3  Read Allocated requests whose ReservationExpiresAt &amp;lt;= now" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.3">
+          <mxGeometry x="1540.0" y="364" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.4" sourceParticipant="DB" targetParticipant="S" messageText="1.4  Expired requests" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2204.0" y="472" as="sourcePoint" />
+            <mxPoint x="1524.0" y="472" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c37" value="1.4  Expired requests" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.4">
+          <mxGeometry x="1540.0" y="436" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c38" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="selfMessage" messageNumber="1.5" sourceParticipant="S" targetParticipant="S" messageText="1.5  Set Expired and relevant expiry metadata" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="616" as="sourcePoint" />
+            <mxPoint x="1532.0" y="656" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1584.0" y="616" />
+              <mxPoint x="1584.0" y="656" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c39" value="1.5  Set Expired and relevant expiry metadata" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=left;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.5">
+          <mxGeometry x="1600.0" y="580" width="680.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c40" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.6" sourceParticipant="S" targetParticipant="A" messageText="1.6  ReleaseAsync(deliveryId, returnId, now)" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="724" as="sourcePoint" />
+            <mxPoint x="1856.0" y="724" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c41" value="1.6  ReleaseAsync(deliveryId, returnId, now)" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.6">
+          <mxGeometry x="1540.0" y="688" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.7" sourceParticipant="A" targetParticipant="DB" messageText="1.7  Set ReleasedAt on unreleased tracked&#10;reservations" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="812" as="sourcePoint" />
+            <mxPoint x="2196.0" y="812" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c43" value="1.7  Set ReleasedAt on unreleased tracked&lt;br&gt;reservations" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.7">
+          <mxGeometry x="1880.0" y="760" width="300.0" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.8" sourceParticipant="A" targetParticipant="S" messageText="1.8  Tracked changes" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1864.0" y="884" as="sourcePoint" />
+            <mxPoint x="1524.0" y="884" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c45" value="1.8  Tracked changes" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.8">
+          <mxGeometry x="1540.0" y="848" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c46" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=0;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.9" sourceParticipant="S" targetParticipant="DB" messageText="1.9  SaveChangesAsync; return count" messageKind="call">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="980" as="sourcePoint" />
+            <mxPoint x="2196.0" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c47" value="1.9  SaveChangesAsync; return count" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.9">
+          <mxGeometry x="1540.0" y="944" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c48" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.10" sourceParticipant="DB" targetParticipant="S" messageText="1.10  Saved" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2204.0" y="1052" as="sourcePoint" />
+            <mxPoint x="1524.0" y="1052" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c49" value="1.10  Saved" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.10">
+          <mxGeometry x="1540.0" y="1016" width="640.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c50" value="" edge="1" parent="1" style="edgeStyle=none;rounded=0;curved=0;html=1;strokeWidth=1.4;strokeColor=#000000;startArrow=none;endArrow=block;endFill=1;startFill=1;endSize=10;dashed=1;dashPattern=6 4;fontFamily=Arial;fontSize=13;fontColor=#000000;labelBackgroundColor=#FFFFFF;" umlRole="message" messageNumber="1.11" sourceParticipant="S" targetParticipant="W" messageText="1.11  Expired count" messageKind="return">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1524.0" y="1124" as="sourcePoint" />
+            <mxPoint x="1184.0" y="1124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c51" value="1.11  Expired count" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;align=center;verticalAlign=bottom;spacing=0;fontSize=14;" umlRole="messageLabel" messageNumber="1.11">
+          <mxGeometry x="1200.0" y="1088" width="300.0" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="c52" value="" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;shape=umlActor;fillColor=#FFFFFF;strokeColor=#000000;" umlRole="participantHead" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="140.0" y="1240" width="40" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="c53" value="Resident" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;fontSize=14;spacing=0;" umlRole="participantLabel" participant="U" participantRole="actor" position="bottom">
+          <mxGeometry x="32.0" y="1288" width="256" height="36" as="geometry" />
+        </mxCell>
+        <mxCell id="c54" value="«boundary»&lt;br&gt;Resident Mobile App" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="UI" participantRole="boundary" position="bottom">
+          <mxGeometry x="372.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c55" value="«external»&lt;br&gt;System Scheduler" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="SCH" participantRole="external" position="bottom">
+          <mxGeometry x="712.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c56" value="«worker»&lt;br&gt;DeliveryRequestExpirationWorker" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="W" participantRole="worker" position="bottom">
+          <mxGeometry x="1052.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c57" value="«service»&lt;br&gt;ReturnRequestService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="S" participantRole="service" position="bottom">
+          <mxGeometry x="1392.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c58" value="«service»&lt;br&gt;CompartmentAllocationService" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="A" participantRole="service" position="bottom">
+          <mxGeometry x="1732.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="c59" value="«database»&lt;br&gt;ApplicationDbContext" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;rounded=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.4;align=center;" umlRole="participantHead" participant="DB" participantRole="database" position="bottom">
+          <mxGeometry x="2072.0" y="1240" width="256" height="72" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
