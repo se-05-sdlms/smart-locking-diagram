@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
   <diagram id="rp4-3.6.5" name="3.6.5 Reset Forgotten Password - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="722">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="722">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -22,9 +22,6 @@
         </mxCell>
         <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IPasswordHashService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ HashPassword(password: string): string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IPasswordHashService">
           <mxGeometry x="1296" y="440" width="300" height="72" as="geometry" />
-        </mxCell>
-        <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IEmailSender&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SendAsync(to: string, subject: string, body:&lt;br&gt;  string): Task&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IEmailSender">
-          <mxGeometry x="1296" y="72" width="300" height="82" as="geometry" />
         </mxCell>
         <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:107px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ PhoneNumber: string?&lt;br&gt;+ Status: UserStatus&lt;br&gt;+ PasswordHash: string&lt;br&gt;+ Role: UserRole&lt;br&gt;+ MustChangePassword: bool&lt;br&gt;+ Email: string?&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="User">
           <mxGeometry x="1744" y="312" width="220" height="147" as="geometry" />
@@ -160,9 +157,6 @@
           <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
         </mxCell>
         <mxCell id="c36" value="" vertex="1" parent="c7" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IPasswordHashService">
-          <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
-        </mxCell>
-        <mxCell id="c37" value="" vertex="1" parent="c8" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="IEmailSender">
           <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
         </mxCell>
         <mxCell id="c38" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="User">

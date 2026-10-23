@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
   <diagram id="rp4-3.8.1" name="3.8.1 Browse User and Operator Accounts - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="1173">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="1173">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -225,7 +225,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.2" name="3.8.2 Create or Reissue Operator Credentials - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="508">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="508">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -430,7 +430,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.3" name="3.8.3 Update Operator Account and Status - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2102" pageHeight="885">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2102" pageHeight="885">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -669,7 +669,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.4" name="3.8.4 Assign or Revoke Locker Operator - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="699">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="699">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -914,7 +914,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.5" name="3.8.5 Configure and Activate System Policy - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="811">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="811">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1066,7 +1066,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.6" name="3.8.6 Generate Operations Report - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="687">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="687">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1275,7 +1275,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.7" name="3.8.7 View System Audit Logs - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="470">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="470">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1404,7 +1404,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.8" name="3.8.8 Manage Locker Infrastructure - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="966">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="966">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1628,7 +1628,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.9" name="3.8.9 Manage Locker Compartments - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2102" pageHeight="907">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2102" pageHeight="907">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1905,7 +1905,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.10" name="3.8.10 Manage Subscription Plans - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="664">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="664">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2076,7 +2076,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.11" name="3.8.11 Manage Notification Rules - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="763">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="763">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2266,201 +2266,73 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.12" name="3.8.12 View Administration Dashboard - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="2016">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1650" pageHeight="1300" dx="1800" dy="1300">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="c2" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«controller»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;AdminController&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- adminService: IAdminService&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ GetDashboard(request:&lt;br&gt;  GetDashboardOverviewRequest?):&lt;br&gt;  Task&amp;lt;IActionResult&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="AdminController">
-          <mxGeometry x="416" y="968" width="300" height="127" as="geometry" />
+          <mxGeometry x="450" y="80" width="300" height="127" as="geometry" />
         </mxCell>
         <mxCell id="c3" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«interface»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;IAdminService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ GetDashboardOverviewAsync(request:&lt;br&gt;  GetDashboardOverviewRequest? = null):&lt;br&gt;  Task&amp;lt;AdminDashboardResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="IAdminService">
-          <mxGeometry x="856" y="888" width="300" height="95" as="geometry" />
+          <mxGeometry x="900" y="80" width="300" height="95" as="geometry" />
         </mxCell>
         <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;AdminService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ GetDashboardOverviewAsync(request:&lt;br&gt;  GetDashboardOverviewRequest? = null):&lt;br&gt;  Task&amp;lt;AdminDashboardResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="AdminService">
-          <mxGeometry x="856" y="1048" width="300" height="127" as="geometry" />
+          <mxGeometry x="900" y="250" width="300" height="127" as="geometry" />
         </mxCell>
         <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
-          <mxGeometry x="1296" y="984" width="300" height="82" as="geometry" />
+          <mxGeometry x="1300" y="272" width="300" height="82" as="geometry" />
         </mxCell>
         <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«request»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;GetDashboardOverviewRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ TrendDays: int&lt;br&gt;+ RecentLimit: int&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="GetDashboardOverviewRequest">
-          <mxGeometry x="48" y="72" width="220" height="82" as="geometry" />
+          <mxGeometry x="100" y="80" width="220" height="82" as="geometry" />
         </mxCell>
         <mxCell id="c7" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;AdminDashboardResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:211px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Statistics:&lt;br&gt;  SystemStatisticsResponse&lt;br&gt;+ LockerStatus:&lt;br&gt;  LockerStatusDistributionResponse&lt;br&gt;+ CompartmentStatus:&lt;br&gt;  CompartmentStatusDistributionResponse&lt;br&gt;+ RecentParcelsTrend: IReadOnlyList&amp;lt;&lt;br&gt;  DailyParcelStatisticResponse&amp;gt;&lt;br&gt;+ AttentionLockers: IReadOnlyList&amp;lt;&lt;br&gt;  AttentionLockerResponse&amp;gt;&lt;br&gt;+ RecentLockers:&lt;br&gt;  IReadOnlyList&amp;lt;RecentLockerResponse&amp;gt;&lt;br&gt;+ RecentAuditLogs:&lt;br&gt;  IReadOnlyList&amp;lt;RecentAuditLogResponse&amp;gt;&lt;br&gt;+ GeneratedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="AdminDashboardResponse">
-          <mxGeometry x="48" y="216" width="220" height="251" as="geometry" />
+          <mxGeometry x="650" y="650" width="220" height="251" as="geometry" />
         </mxCell>
         <mxCell id="c8" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;SystemStatisticsResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:224px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ TotalLockers: int&lt;br&gt;+ ActiveLockers: int&lt;br&gt;+ TotalCompartments: int&lt;br&gt;+ AvailableCompartments: int&lt;br&gt;+ OccupiedCompartments: int&lt;br&gt;+ TotalUsers: int&lt;br&gt;+ ResidentCount: int&lt;br&gt;+ OperatorCount: int&lt;br&gt;+ StoredParcelsCount: int&lt;br&gt;+ NewParcelsTodayCount: int&lt;br&gt;+ OverdueParcelsCount: int&lt;br&gt;+ OfflineLockersCount: int&lt;br&gt;+ OpenIncidentsCount: int&lt;br&gt;+ HighPriorityIncidentsCount: int&lt;br&gt;+ TotalOverdueFeeAmountLast30Days:&lt;br&gt;  decimal&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="SystemStatisticsResponse">
-          <mxGeometry x="48" y="1720" width="220" height="264" as="geometry" />
+          <mxGeometry x="100" y="400" width="220" height="264" as="geometry" />
         </mxCell>
         <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerStatusDistributionResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Total: int&lt;br&gt;+ Operational: int&lt;br&gt;+ Maintenance: int&lt;br&gt;+ Suspended: int&lt;br&gt;+ Offline: int&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerStatusDistributionResponse">
-          <mxGeometry x="48" y="1104" width="220" height="121" as="geometry" />
+          <mxGeometry x="100" y="760" width="220" height="121" as="geometry" />
         </mxCell>
         <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;CompartmentStatusDistributionResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Total: int&lt;br&gt;+ Available: int&lt;br&gt;+ Occupied: int&lt;br&gt;+ Overdue: int&lt;br&gt;+ Maintenance: int&lt;br&gt;+ Disabled: int&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="CompartmentStatusDistributionResponse">
-          <mxGeometry x="48" y="744" width="220" height="134" as="geometry" />
+          <mxGeometry x="40" y="960" width="280" height="134" as="geometry" />
         </mxCell>
         <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;DailyParcelStatisticResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Date: DateOnly&lt;br&gt;+ DayLabel: string&lt;br&gt;+ Count: int&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="DailyParcelStatisticResponse">
-          <mxGeometry x="48" y="944" width="220" height="95" as="geometry" />
+          <mxGeometry x="1150" y="400" width="220" height="95" as="geometry" />
         </mxCell>
         <mxCell id="c12" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;AttentionLockerResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:107px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ Address: string&lt;br&gt;+ ConnectionStatus:&lt;br&gt;  LockerConnectionStatus&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerOperationalStatus&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="AttentionLockerResponse">
-          <mxGeometry x="48" y="536" width="220" height="147" as="geometry" />
+          <mxGeometry x="1150" y="600" width="220" height="147" as="geometry" />
         </mxCell>
         <mxCell id="c13" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;RecentLockerResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:133px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ Address: string&lt;br&gt;+ OperatorName: string?&lt;br&gt;+ ConnectionStatus:&lt;br&gt;  LockerConnectionStatus&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerOperationalStatus&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="RecentLockerResponse">
-          <mxGeometry x="48" y="1480" width="220" height="173" as="geometry" />
+          <mxGeometry x="1150" y="840" width="220" height="173" as="geometry" />
         </mxCell>
         <mxCell id="c14" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«response»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;RecentAuditLogResponse&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:94px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ Action: string&lt;br&gt;+ ActorName: string&lt;br&gt;+ Target: string?&lt;br&gt;+ Result: AuditLogResult&lt;br&gt;+ OccurredAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="RecentAuditLogResponse">
-          <mxGeometry x="48" y="1288" width="220" height="134" as="geometry" />
+          <mxGeometry x="1150" y="1080" width="220" height="134" as="geometry" />
         </mxCell>
-        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5039370078740157;exitPerimeter=0;entryX=0.0;entryY=0.5052631578947369;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="IAdminService" relationshipCaption="«uses»" source="c2" target="c3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="716" y="1032" as="sourcePoint" />
-            <mxPoint x="856" y="936" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="784" y="1032" />
-              <mxPoint x="784" y="936" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c16" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c15">
-          <mxGeometry x="792" y="975.0" width="54" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5039370078740157;exitPerimeter=0;entryX=0.0;entryY=0.4878048780487805;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c4" target="c5">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1156" y="1112" as="sourcePoint" />
-            <mxPoint x="1296" y="1024" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1224" y="1112" />
-              <mxPoint x="1224" y="1024" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c18" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c17">
-          <mxGeometry x="1232" y="1059.0" width="54" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c19" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=block;endSize=12;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.5066666666666667;exitY=0.0;exitPerimeter=0;entryX=0.5066666666666667;entryY=1.0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="AdminService" toClass="IAdminService" relationshipCaption="«implements»" source="c4" target="c3">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1008" y="1048" as="sourcePoint" />
-            <mxPoint x="1008" y="983" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c20" value="«implements»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c19">
-          <mxGeometry x="1016" y="1006.5" width="74.4" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c21" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.12598425196850394;exitPerimeter=0;entryX=1.0;entryY=0.4878048780487805;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="GetDashboardOverviewRequest" relationshipCaption="«accepts»" source="c2" target="c6">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="984" as="sourcePoint" />
-            <mxPoint x="268" y="112" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="304" y="984" />
-              <mxPoint x="304" y="112" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c22" value="«accepts»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c21">
-          <mxGeometry x="352" y="539.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c23" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.1889763779527559;exitPerimeter=0;entryX=1.0;entryY=0.5099601593625498;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="AdminDashboardResponse" relationshipCaption="«returns»" source="c2" target="c7">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="992" as="sourcePoint" />
-            <mxPoint x="268" y="344" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="344" y="992" />
-              <mxPoint x="344" y="344" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c24" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c23">
-          <mxGeometry x="352" y="659.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c25" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.8818897637795275;exitPerimeter=0;entryX=1.0;entryY=0.48484848484848486;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="SystemStatisticsResponse" relationshipCaption="«returns»" source="c2" target="c8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1080" as="sourcePoint" />
-            <mxPoint x="268" y="1848" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="384" y="1080" />
-              <mxPoint x="384" y="1848" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c26" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c25">
-          <mxGeometry x="392" y="1455.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.6299212598425197;exitPerimeter=0;entryX=1.0;entryY=0.5289256198347108;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="LockerStatusDistributionResponse" relationshipCaption="«returns»" source="c2" target="c9">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1048" as="sourcePoint" />
-            <mxPoint x="268" y="1168" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="352" y="1048" />
-              <mxPoint x="352" y="1168" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c28" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c27">
-          <mxGeometry x="285.2" y="1099.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.3779527559055118;exitPerimeter=0;entryX=1.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="CompartmentStatusDistributionResponse" relationshipCaption="«returns»" source="c2" target="c10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1016" as="sourcePoint" />
-            <mxPoint x="268" y="808" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="328" y="1016" />
-              <mxPoint x="328" y="808" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c30" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c29">
-          <mxGeometry x="352" y="903.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c31" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.5039370078740157;exitPerimeter=0;entryX=1.0;entryY=0.5052631578947369;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="DailyParcelStatisticResponse" relationshipCaption="«returns»" source="c2" target="c11">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1032" as="sourcePoint" />
-            <mxPoint x="268" y="992" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="344" y="1032" />
-              <mxPoint x="344" y="992" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c32" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c31">
-          <mxGeometry x="276.6" y="1020" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c33" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.31496062992125984;exitPerimeter=0;entryX=1.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="AttentionLockerResponse" relationshipCaption="«returns»" source="c2" target="c12">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1008" as="sourcePoint" />
-            <mxPoint x="268" y="608" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="320" y="1008" />
-              <mxPoint x="320" y="608" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c34" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c33">
-          <mxGeometry x="344" y="799.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.8188976377952756;exitPerimeter=0;entryX=1.0;entryY=0.5086705202312138;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="RecentLockerResponse" relationshipCaption="«returns»" source="c2" target="c13">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1072" as="sourcePoint" />
-            <mxPoint x="268" y="1568" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="368" y="1072" />
-              <mxPoint x="368" y="1568" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c36" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c35">
-          <mxGeometry x="301.2" y="1311.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c37" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.6929133858267716;exitPerimeter=0;entryX=1.0;entryY=0.47761194029850745;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="RecentAuditLogResponse" relationshipCaption="«returns»" source="c2" target="c14">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="416" y="1056" as="sourcePoint" />
-            <mxPoint x="268" y="1352" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="360" y="1056" />
-              <mxPoint x="360" y="1352" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c38" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c37">
-          <mxGeometry x="293.2" y="1195.0" width="58.800000000000004" height="18" as="geometry" />
-        </mxCell>
+        <mxCell id="c15" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="IAdminService" relationshipCaption="«uses»" source="c2" target="c3">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="820" y="143.5" /><mxPoint x="820" y="127.5" /></Array></mxGeometry></mxCell>
+        <mxCell id="c17" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminService" toClass="ApplicationDbContext" relationshipCaption="«uses»" source="c4" target="c5">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1250" y="313.5" /><mxPoint x="1250" y="313" /></Array></mxGeometry></mxCell>
+        <mxCell id="c19" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="realization" fromClass="AdminService" toClass="IAdminService" relationshipCaption="«implements»" source="c4" target="c3">
+          <mxGeometry as="geometry" relative="1"><Array as="points" /></mxGeometry></mxCell>
+        <mxCell id="c21" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.32;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="GetDashboardOverviewRequest" relationshipCaption="«accepts»" source="c2" target="c6">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="380" y="120.64" /><mxPoint x="380" y="121" /></Array></mxGeometry></mxCell>
+        <mxCell id="c23" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=1;endArrow=open;endFill=0;endSize=10;exitX=0.5;exitY=1;entryX=0.5;entryY=0;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="AdminController" toClass="AdminDashboardResponse" relationshipCaption="«returns»" source="c2" target="c7">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="600" y="450" /><mxPoint x="760" y="450" /></Array></mxGeometry></mxCell>
+        <mxCell id="c25" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.15;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="SystemStatisticsResponse" relationshipCaption="Statistics" source="c7" target="c8">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="500" y="687.65" /><mxPoint x="500" y="532" /></Array></mxGeometry></mxCell>
+        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="LockerStatusDistributionResponse" relationshipCaption="LockerStatus" source="c7" target="c9">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="540" y="775.5" /><mxPoint x="540" y="820.5" /></Array></mxGeometry></mxCell>
+        <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=0;exitY=0.85;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="CompartmentStatusDistributionResponse" relationshipCaption="CompartmentStatus" source="c7" target="c10">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="580" y="863.35" /><mxPoint x="580" y="1027" /></Array></mxGeometry></mxCell>
+        <mxCell id="c31" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.1;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="DailyParcelStatisticResponse" relationshipCaption="RecentParcelsTrend" source="c7" target="c11">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="940" y="675.1" /><mxPoint x="940" y="447.5" /></Array></mxGeometry></mxCell>
+        <mxCell id="c33" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.35;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="AttentionLockerResponse" relationshipCaption="AttentionLockers" source="c7" target="c12">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="980" y="737.85" /><mxPoint x="980" y="673.5" /></Array></mxGeometry></mxCell>
+        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.6;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="RecentLockerResponse" relationshipCaption="RecentLockers" source="c7" target="c13">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1020" y="800.6" /><mxPoint x="1020" y="926.5" /></Array></mxGeometry></mxCell>
+        <mxCell id="c37" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;strokeColor=#000000;strokeWidth=1.2;dashed=0;endArrow=open;endFill=0;endSize=10;exitX=1;exitY=0.9;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="AdminDashboardResponse" toClass="RecentAuditLogResponse" relationshipCaption="RecentAuditLogs" source="c7" target="c14">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="960" y="875.9" /><mxPoint x="960" y="1147" /></Array></mxGeometry></mxCell>
         <mxCell id="c39" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="AdminController">
           <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
         </mxCell>
@@ -2492,7 +2364,7 @@
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
         </mxCell>
         <mxCell id="c49" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentStatusDistributionResponse">
-          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
+          <mxGeometry x="0" y="40" width="280" height="1" as="geometry" />
         </mxCell>
         <mxCell id="c50" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="DailyParcelStatisticResponse">
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
@@ -2506,11 +2378,11 @@
         <mxCell id="c53" value="" vertex="1" parent="c14" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="RecentAuditLogResponse">
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
         </mxCell>
-      </root>
+      <mxCell id="label_c15" parent="1" vertex="1" value="«uses»" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="765" y="105" width="120" height="18" /></mxCell><mxCell id="label_c17" parent="1" vertex="1" value="«uses»" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1180" y="286" width="120" height="18" /></mxCell><mxCell id="label_c19" parent="1" vertex="1" value="«implements»" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1060" y="205" width="120" height="18" /></mxCell><mxCell id="label_c21" parent="1" vertex="1" value="«accepts»" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="320" y="92" width="120" height="18" /></mxCell><mxCell id="label_c23" parent="1" vertex="1" value="«returns»" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="610" y="424" width="120" height="18" /></mxCell><mxCell id="label_c25" parent="1" vertex="1" value="Statistics" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="340" y="507" width="120" height="18" /></mxCell><mxCell id="mult_c25" parent="1" vertex="1" value="1" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="325" y="535" width="36" height="18" /></mxCell><mxCell id="label_c27" parent="1" vertex="1" value="LockerStatus" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="340" y="795.5" width="120" height="18" /></mxCell><mxCell id="mult_c27" parent="1" vertex="1" value="1" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="325" y="823.5" width="36" height="18" /></mxCell><mxCell id="label_c29" parent="1" vertex="1" value="CompartmentStatus" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="340" y="1002" width="120" height="18" /></mxCell><mxCell id="mult_c29" parent="1" vertex="1" value="1" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="325" y="1030" width="36" height="18" /></mxCell><mxCell id="label_c31" parent="1" vertex="1" value="RecentParcelsTrend" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1028" y="422.5" width="120" height="18" /></mxCell><mxCell id="mult_c31" parent="1" vertex="1" value="0..*" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1110" y="450.5" width="36" height="18" /></mxCell><mxCell id="label_c33" parent="1" vertex="1" value="AttentionLockers" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1028" y="648.5" width="120" height="18" /></mxCell><mxCell id="mult_c33" parent="1" vertex="1" value="0..*" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1110" y="676.5" width="36" height="18" /></mxCell><mxCell id="label_c35" parent="1" vertex="1" value="RecentLockers" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1028" y="901.5" width="120" height="18" /></mxCell><mxCell id="mult_c35" parent="1" vertex="1" value="0..*" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1110" y="929.5" width="36" height="18" /></mxCell><mxCell id="label_c37" parent="1" vertex="1" value="RecentAuditLogs" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1028" y="1122" width="120" height="18" /></mxCell><mxCell id="mult_c37" parent="1" vertex="1" value="0..*" style="text;html=1;fillColor=none;strokeColor=none;align=center;verticalAlign=middle;fontColor=#000000;fontSize=10;"><mxGeometry as="geometry" x="1110" y="1150" width="36" height="18" /></mxCell></root>
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.13" name="3.8.13 View System Statistics - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="504">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="504">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2621,7 +2493,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.14" name="3.8.14 Create Locker Operator Account">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1400">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1400">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2832,7 +2704,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.15" name="3.8.15 Reissue Operator Temporary Password">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1416">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1416">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3043,7 +2915,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.16" name="3.8.16 Change Operator Password after First Login">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3238,7 +3110,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.17" name="3.8.17 Update User Account or Status">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1240">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1240">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3433,7 +3305,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.18" name="3.8.18 Assign Locker Operator">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1252">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1252">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3628,7 +3500,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.19" name="3.8.19 Revoke Locker Operator Assignment">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3823,7 +3695,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.20" name="3.8.20 Create, Update or Deactivate Locker">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1204">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1204">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4018,7 +3890,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.21" name="3.8.21 Create, Update or Deactivate Compartment">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1256">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1256">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4213,7 +4085,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.22" name="3.8.22 Create System Policy Version">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1240">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1240">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4408,7 +4280,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.23" name="3.8.23 Edit Inactive System Policy">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1220">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1220">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4603,7 +4475,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.24" name="3.8.24 Activate System Policy">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1220">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1220">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4798,7 +4670,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.25" name="3.8.25 Generate &amp; Export System Report">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1116">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1116">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4972,7 +4844,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.26" name="3.8.26 Search System Audit Logs">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1112">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1112">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5146,7 +5018,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.27" name="3.8.27 View Audit Log Detail">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1028">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1028">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5320,7 +5192,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.28" name="3.8.28 Create or Update Subscription Plan">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1292">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1292">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5515,7 +5387,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.29" name="3.8.29 Create or Update Notification Rule">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1272">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -5710,7 +5582,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.8.30" name="3.8.30 View Administration Dashboard and Statistics">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1144">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1144">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

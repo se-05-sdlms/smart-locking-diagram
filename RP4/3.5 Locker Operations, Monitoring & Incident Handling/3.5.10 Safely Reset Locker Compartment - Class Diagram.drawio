@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
   <diagram id="rp4-3.5.10" name="3.5.10 Safely Reset Locker Compartment - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2148" pageHeight="913">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2148" pageHeight="913">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,7 +114,7 @@
         <mxCell id="c26" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c25">
           <mxGeometry x="345.0" y="434" width="54" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.5853658536585366;exitPerimeter=0;entryX=1.0;entryY=0.5185185185185185;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="CompartmentResetsController" toClass="CompartmentResetContext" relationshipCaption="«uses»" source="c2" target="c13">
+        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.5853658536585366;exitPerimeter=0;entryX=1.0;entryY=0.5185185185185185;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="CompartmentResetsController" toClass="CompartmentResetContext" relationshipCaption="«returns»" source="c2" target="c13">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="416" y="496" as="sourcePoint" />
             <mxPoint x="268" y="528" as="targetPoint" />
@@ -124,7 +124,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="c28" value="«uses»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c27">
+        <mxCell id="c28" value="«returns»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c27">
           <mxGeometry x="283.0" y="506" width="54" height="18" as="geometry" />
         </mxCell>
         <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.7804878048780488;exitPerimeter=0;entryX=1.0;entryY=0.4897959183673469;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="CompartmentResetsController" toClass="CompartmentResetResponse" relationshipCaption="«returns»" source="c2" target="c14">
@@ -155,43 +155,27 @@
         <mxCell id="c34" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c31">
           <mxGeometry x="1812" y="296" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.5161290322580645;exitPerimeter=0;entryX=1.0;entryY=0.3305785123966942;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="Locker" toClass="LockerEvent" relationshipCaption="emits" source="c7" target="c10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1964" y="168" as="sourcePoint" />
-            <mxPoint x="1964" y="800" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="2000" y="168" />
-              <mxPoint x="2000" y="800" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="c35" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1;exitY=0.5;entryX=1;entryY=0.8;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="Locker" toClass="LockerEvent" relationshipCaption="emits" source="c7" target="c10">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="2120" y="165" /><mxPoint x="2120" y="856.8" /></Array></mxGeometry></mxCell>
+        <mxCell id="c36" value="emits" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c35">
+          <mxGeometry x="2130" y="500" width="54" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c36" value="emits" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c35">
-          <mxGeometry x="2008" y="475.0" width="54" height="18" as="geometry" />
+        <mxCell id="c37" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c35">
+          <mxGeometry x="1972" y="140" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c37" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Locker" edgeId="c35">
-          <mxGeometry x="1972" y="144" width="36" height="18" as="geometry" />
+        <mxCell id="c38" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerEvent" edgeId="c35">
+          <mxGeometry x="1972" y="860" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c38" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerEvent" edgeId="c35">
-          <mxGeometry x="2012" y="732" width="36" height="18" as="geometry" />
+        <mxCell id="c39" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1;exitY=0.2;entryX=1;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="LockerEvent" toClass="LockerCompartment" relationshipCaption="LockerCompartment" source="c10" target="c8">
+          <mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="2030" y="784.2" /><mxPoint x="2030" y="400" /></Array></mxGeometry></mxCell>
+        <mxCell id="c40" value="LockerCompartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c39">
+          <mxGeometry x="2042" y="610" width="100.4" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c39" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6611570247933884;exitPerimeter=0;entryX=1.0;entryY=0.5;entryPerimeter=0;" umlRole="classRelationship" relationship="association" fromClass="LockerEvent" toClass="LockerCompartment" relationshipCaption="LockerCompartment" source="c10" target="c8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1964" y="840" as="sourcePoint" />
-            <mxPoint x="1964" y="400" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1992" y="840" />
-              <mxPoint x="1992" y="400" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="c41" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerEvent" edgeId="c39">
+          <mxGeometry x="1972" y="766" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c40" value="LockerCompartment" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c39">
-          <mxGeometry x="2000" y="611.0" width="100.4" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c41" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerEvent" edgeId="c39">
-          <mxGeometry x="1972" y="846" width="36" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c42" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c39">
-          <mxGeometry x="2012" y="332" width="36" height="18" as="geometry" />
+        <mxCell id="c42" value="0..1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=none;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerCompartment" edgeId="c39">
+          <mxGeometry x="1972" y="376" width="36" height="18" as="geometry" />
         </mxCell>
         <mxCell id="c43" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentResetsController">
           <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
@@ -238,7 +222,7 @@
         <mxCell id="c57" value="" vertex="1" parent="c14" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="CompartmentResetResponse">
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
         </mxCell>
-      </root>
+      <mxCell id="fix_store_0" source="c6" target="c7" parent="1" edge="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;endArrow=open;endFill=0;html=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=none;exitX=1;exitY=0.15;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship"><mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1616" y="524.1" /><mxPoint x="1616" y="165" /></Array></mxGeometry></mxCell><mxCell id="fix_store_1" source="c6" target="c8" parent="1" edge="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;endArrow=open;endFill=0;html=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=none;exitX=1;exitY=0.35;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship"><mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1652" y="550.9" /><mxPoint x="1652" y="400" /></Array></mxGeometry></mxCell><mxCell id="fix_store_2" source="c6" target="c9" parent="1" edge="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;endArrow=open;endFill=0;html=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=none;exitX=1;exitY=0.65;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship"><mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1688" y="591.1" /><mxPoint x="1688" y="617.5" /></Array></mxGeometry></mxCell><mxCell id="fix_store_3" source="c6" target="c10" parent="1" edge="1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;dashed=1;endArrow=open;endFill=0;html=1;strokeColor=#000000;fontColor=#000000;fontSize=10;labelBackgroundColor=none;exitX=1;exitY=0.85;entryX=0;entryY=0.5;exitPerimeter=0;entryPerimeter=0;" umlRole="classRelationship"><mxGeometry as="geometry" relative="1"><Array as="points"><mxPoint x="1632" y="617.9" /><mxPoint x="1632" y="820.5" /></Array></mxGeometry></mxCell><mxCell id="persist_label_0" parent="1" vertex="1" value="«persists»" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#000000;fontSize=10;align=center;"><mxGeometry as="geometry" x="1692" y="142" width="50" height="18" /></mxCell><mxCell id="persist_label_1" parent="1" vertex="1" value="«persists»" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#000000;fontSize=10;align=center;"><mxGeometry as="geometry" x="1692" y="377" width="50" height="18" /></mxCell><mxCell id="persist_label_2" parent="1" vertex="1" value="«persists»" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#000000;fontSize=10;align=center;"><mxGeometry as="geometry" x="1692" y="594.5" width="50" height="18" /></mxCell><mxCell id="persist_label_3" parent="1" vertex="1" value="«persists»" style="text;html=1;fillColor=none;strokeColor=none;fontColor=#000000;fontSize=10;align=center;"><mxGeometry as="geometry" x="1692" y="797.5" width="50" height="18" /></mxCell></root>
     </mxGraphModel>
   </diagram>
 </mxfile>

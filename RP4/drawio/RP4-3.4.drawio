@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <mxfile host="app.diagrams.net" type="device" version="24.7.17" compressed="false">
   <diagram id="rp4-3.4.1" name="3.4.1 Authorize and Unlock Parcel Pickup - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2108" pageHeight="923">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2108" pageHeight="923">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -263,7 +263,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.2" name="3.4.2 Dispatch Locker Unlock Command - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2116" pageHeight="833">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2116" pageHeight="833">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -554,7 +554,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.3" name="3.4.3 Prepare Bluetooth Pickup Command - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="819">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="819">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -718,7 +718,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.4" name="3.4.4 Confirm Parcel Pickup - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="1053">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2412" pageHeight="1053">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -731,7 +731,7 @@
         <mxCell id="c4" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«service»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ParcelPickupService&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;- dbContext: ApplicationDbContext&lt;/div&gt;&lt;div style=&quot;height:55px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ ConfirmPickupAsync(residentUserId: Guid,&lt;br&gt;  lockerAccessEventId: Guid):&lt;br&gt;  Task&amp;lt;PickupConfirmationResponse&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ParcelPickupService">
           <mxGeometry x="856" y="656" width="300" height="127" as="geometry" />
         </mxCell>
-        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ LockerCompartments: DbSet&amp;lt;LockerCompartment&amp;gt;&lt;br&gt;+ DeliveryRequests: DbSet&amp;lt;DeliveryRequest&amp;gt;&lt;br&gt;+ Parcels: DbSet&amp;lt;Parcel&amp;gt;&lt;br&gt;+ ParcelStatusHistories: DbSet&amp;lt;ParcelStatusHistory&amp;gt;&lt;br&gt;+ LockerAccessEvents: DbSet&amp;lt;LockerAccessEvent&amp;gt;&lt;/div&gt;&lt;div style=&quot;height:42px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ SaveChangesAsync(acceptAllChangesOnSuccess:&lt;br&gt;  bool): Task&amp;lt;int&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
+        <mxCell id="c5" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«database»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ApplicationDbContext&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ LockerCompartments: DbSet&amp;lt;LockerCompartment&amp;gt;&lt;br&gt;+ DeliveryRequests: DbSet&amp;lt;DeliveryRequest&amp;gt;&lt;br&gt;+ Parcels: DbSet&amp;lt;Parcel&amp;gt;&lt;br&gt;+ LockerAccessEvents: DbSet&amp;lt;LockerAccessEvent&amp;gt;&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ApplicationDbContext">
           <mxGeometry x="1296" y="560" width="300" height="163" as="geometry" />
         </mxCell>
         <mxCell id="c6" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;Parcel&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:146px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ DeliveryRequestId: Guid&lt;br&gt;+ Status: ParcelStatus&lt;br&gt;+ StoredAt: DateTimeOffset&lt;br&gt;+ MaxStorageUntil: DateTimeOffset&lt;br&gt;+ RetrievedAt: DateTimeOffset?&lt;br&gt;+ RemovedAt: DateTimeOffset?&lt;br&gt;+ RemovedByUserId: Guid?&lt;br&gt;+ RemovalReason: string?&lt;br&gt;+ UpdatedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="Parcel">
@@ -745,9 +745,6 @@
         </mxCell>
         <mxCell id="c9" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;LockerCompartment&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:120px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ LockerId: Guid&lt;br&gt;+ Code: string&lt;br&gt;+ DoorStatus: DoorStatus&lt;br&gt;+ HardwareChannel: int&lt;br&gt;+ OperationalStatus:&lt;br&gt;  LockerCompartmentOperationalStatus&lt;br&gt;+ HardwareCode: string&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="LockerCompartment">
           <mxGeometry x="1744" y="384" width="220" height="160" as="geometry" />
-        </mxCell>
-        <mxCell id="c10" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«entity»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ParcelStatusHistory&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:81px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ Id: Guid&lt;br&gt;+ ParcelId: Guid&lt;br&gt;+ FromStatus: ParcelStatus?&lt;br&gt;+ ToStatus: ParcelStatus&lt;br&gt;+ ChangedAt: DateTimeOffset&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ParcelStatusHistory">
-          <mxGeometry x="1744" y="560" width="220" height="121" as="geometry" />
         </mxCell>
         <mxCell id="c11" value="&lt;div style=&quot;display:block;width:100%;text-align:center;padding:5px 0 6px;margin:0;height:29px;box-sizing:border-box&quot;&gt;&lt;b style=&quot;font-size:9.5px&quot;&gt;«request»&lt;/b&gt;&lt;br&gt;&lt;b style=&quot;font-size:11px&quot;&gt;ConfirmPickupRequest&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;height:11px&quot;&gt;&lt;/div&gt;&lt;div style=&quot;height:32px;box-sizing:border-box;padding:8px 8px 4px;margin:0;line-height:13px;font-size:9.5px;font-family:Arial,sans-serif;font-weight:bold;white-space:normal;text-align:left&quot;&gt;+ AccessEventId: Guid&lt;/div&gt;" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;spacing=0;spacingLeft=0;spacingRight=0;spacingTop=0;spacingBottom=0;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=9.5;fontFamily=Arial;fontStyle=1;rounded=0;" umlRole="classBox" className="ConfirmPickupRequest">
           <mxGeometry x="48" y="520" width="220" height="72" as="geometry" />
@@ -841,19 +838,6 @@
         </mxCell>
         <mxCell id="c26" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c25">
           <mxGeometry x="1680" y="543.0" width="64.0" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c27" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=1.0;exitY=0.6871165644171779;exitPerimeter=0;entryX=0.0;entryY=0.5289256198347108;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ApplicationDbContext" toClass="ParcelStatusHistory" relationshipCaption="«persists»" source="c5" target="c10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1596" y="672" as="sourcePoint" />
-            <mxPoint x="1744" y="624" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1696" y="672" />
-              <mxPoint x="1696" y="624" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c28" value="«persists»" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c27">
-          <mxGeometry x="1614.0" y="650" width="64.0" height="18" as="geometry" />
         </mxCell>
         <mxCell id="c29" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 4;strokeWidth=1.2;strokeColor=#000000;startArrow=none;endArrow=open;endSize=8;endFill=0;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.3508771929824561;exitPerimeter=0;entryX=1.0;entryY=0.4444444444444444;entryPerimeter=0;" umlRole="classRelationship" relationship="dependency" fromClass="ParcelsController" toClass="ConfirmPickupRequest" relationshipCaption="«accepts»" source="c2" target="c11">
           <mxGeometry relative="1" as="geometry">
@@ -968,25 +952,6 @@
         <mxCell id="c52" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="LockerAccessEvent" edgeId="c49">
           <mxGeometry x="1972" y="208" width="36" height="18" as="geometry" />
         </mxCell>
-        <mxCell id="c53" value="" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=0;strokeWidth=1.2;strokeColor=#000000;startArrow=diamond;startFill=1;startSize=12;endArrow=none;fontColor=#000000;fontSize=10;fontStyle=1;labelBackgroundColor=#FFFFFF;jumpStyle=arc;jumpSize=8;exitX=0.0;exitY=0.5161290322580645;exitPerimeter=0;entryX=1.0;entryY=0.5289256198347108;entryPerimeter=0;" umlRole="classRelationship" relationship="composition" fromClass="Parcel" toClass="ParcelStatusHistory" relationshipCaption="records status history" source="c6" target="c10">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2144" y="152" as="sourcePoint" />
-            <mxPoint x="1964" y="624" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="2040" y="152" />
-              <mxPoint x="2040" y="624" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="c54" value="records status history" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="relationshipLabel" edgeId="c53">
-          <mxGeometry x="2064" y="379.0" width="120" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c55" value="1" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="Parcel" edgeId="c53">
-          <mxGeometry x="2100" y="128" width="36" height="18" as="geometry" />
-        </mxCell>
-        <mxCell id="c56" value="0..*" vertex="1" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;text;fillColor=#FFFFFF;strokeColor=none;fontSize=10;fontStyle=1;fontColor=#000000;align=center;verticalAlign=middle;spacing=0;" umlRole="multiplicity" className="ParcelStatusHistory" edgeId="c53">
-          <mxGeometry x="1972" y="600" width="36" height="18" as="geometry" />
-        </mxCell>
         <mxCell id="c57" value="" vertex="1" parent="c2" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ParcelsController">
           <mxGeometry x="0" y="40" width="300" height="1" as="geometry" />
         </mxCell>
@@ -1020,9 +985,6 @@
         <mxCell id="c67" value="" vertex="1" parent="c9" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="LockerCompartment">
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
         </mxCell>
-        <mxCell id="c68" value="" vertex="1" parent="c10" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ParcelStatusHistory">
-          <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
-        </mxCell>
         <mxCell id="c69" value="" vertex="1" parent="c11" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fontColor=#000000;shadow=0;line;strokeWidth=1.2;fillColor=none;strokeColor=#000000;rounded=0;" umlRole="classSeparator" className="ConfirmPickupRequest">
           <mxGeometry x="0" y="40" width="220" height="1" as="geometry" />
         </mxCell>
@@ -1033,7 +995,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.5" name="3.4.5 Reconcile Offline Device Journal - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="892">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2012" pageHeight="892">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1257,7 +1219,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.6" name="3.4.6 Issue Resident Bluetooth Permit - Class Diagram">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="423">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1644" pageHeight="423">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1387,7 +1349,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.7" name="3.4.7 Authorize Retrieval &amp; Check Overdue Fee">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1108">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1108">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1558,7 +1520,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.8" name="3.4.8 Request Server-based Parcel Unlock">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1308">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1308">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1764,7 +1726,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.9" name="3.4.9 Dispatch Server Unlock via MQTT">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1076">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1076">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1950,7 +1912,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.10" name="3.4.10 Prepare Bluetooth Parcel Pickup Command">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2088" pageHeight="1292">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2088" pageHeight="1292">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2156,7 +2118,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.11" name="3.4.11 Build Bluetooth Unlock Command">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1148">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1148">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2354,7 +2316,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.12" name="3.4.12 Transfer Bluetooth Command &amp; Reject Unsigned HTTP Journal">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2088" pageHeight="1112">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2088" pageHeight="1112">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2532,7 +2494,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.13" name="3.4.13 Reconcile Offline Bluetooth Event Results">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1216">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1216">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2722,7 +2684,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.14" name="3.4.14 Issue Resident Permit for Locker-mediated Requests">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1128">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1128">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2896,7 +2858,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.15" name="3.4.15 Handle Locker-mediated Resident Bluetooth Request">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1132">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2056" pageHeight="1132">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3082,7 +3044,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.16" name="3.4.16 Validate &amp; Sequence Device Journals">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2376" pageHeight="1580">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="2376" pageHeight="1580">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3349,7 +3311,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.17" name="3.4.17 Apply Parcel Pickup &amp; Release Compartment">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1536" pageHeight="1196">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1536" pageHeight="1196">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3526,7 +3488,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="rp4-3.4.18" name="3.4.18 Confirm Pickup through Resident API">
-    <mxGraphModel grid="1" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1236">
+    <mxGraphModel grid="0" gridSize="8" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" background="#FFFFFF" math="0" shadow="0" pageWidth="1736" pageHeight="1236">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

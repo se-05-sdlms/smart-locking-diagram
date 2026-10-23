@@ -4656,69 +4656,9 @@
     },
     {
       "key": "3.5.30",
-      "title": "Deliver Queued Push Notification",
-      "kind": "sequence",
-      "file": "pages/3.5.30.drawio",
-      "sources": [
-        "smart-locking-be.Infrastructure/Services/ExpoPushNotificationService.cs"
-      ],
-      "messages": [
-        {
-          "number": "1.",
-          "from": "S",
-          "to": "DB",
-          "kind": "call",
-          "label": "Load pending notification and active DeviceInstallation push tokens"
-        },
-        {
-          "number": "1.1",
-          "from": "DB",
-          "to": "S",
-          "kind": "return",
-          "label": "Notification and device tokens"
-        },
-        {
-          "number": "1.2",
-          "from": "S",
-          "to": "EXPO",
-          "kind": "http",
-          "label": "POST https://exp.host/--/api/v2/push/send"
-        },
-        {
-          "number": "1.3",
-          "from": "EXPO",
-          "to": "S",
-          "kind": "return",
-          "label": "Push ticket / error response"
-        },
-        {
-          "number": "1.4",
-          "from": "EXPO",
-          "to": "UI",
-          "kind": "async",
-          "label": "Platform push delivery boundary"
-        },
-        {
-          "number": "1.5",
-          "from": "UI",
-          "to": "U",
-          "kind": "return",
-          "label": "Present notification"
-        },
-        {
-          "number": "1.6",
-          "from": "S",
-          "to": "DB",
-          "kind": "call",
-          "label": "Save delivery attempt / ticket / result"
-        }
-      ]
-    },
-    {
-      "key": "3.5.31",
       "title": "Transfer Overdue Parcel to Collection Point",
       "kind": "sequence",
-      "file": "pages/3.5.31.drawio",
+      "file": "pages/3.5.30.drawio",
       "sources": [
         "smart-locking-be.API/Controllers/ParcelsController.cs",
         "smart-locking-be.Infrastructure/Services/ExpoPushNotificationService.cs",
@@ -4812,10 +4752,10 @@
       ]
     },
     {
-      "key": "3.5.32",
+      "key": "3.5.31",
       "title": "Transfer Overdue Parcel to Collection Point",
       "kind": "sequence",
-      "file": "pages/3.5.32.drawio",
+      "file": "pages/3.5.31.drawio",
       "sources": [
         "smart-locking-be.API/Controllers/ParcelsController.cs",
         "smart-locking-be.Infrastructure/Services/ExpoPushNotificationService.cs",

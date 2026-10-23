@@ -559,21 +559,13 @@
   {
     "key": "3.5.30",
     "width": 1737,
-    "height": 977,
-    "cells": 39,
-    "invalid": 0,
-    "clippedClassBoxes": []
-  },
-  {
-    "key": "3.5.31",
-    "width": 1737,
     "height": 1417,
     "cells": 50,
     "invalid": 0,
     "clippedClassBoxes": []
   },
   {
-    "key": "3.5.32",
+    "key": "3.5.31",
     "width": 1737,
     "height": 1417,
     "cells": 50,
